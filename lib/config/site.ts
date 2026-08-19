@@ -7,7 +7,7 @@ export const siteConfig = {
   language: "fr-FR",
   supportEmail: "contact@strong4k-tv.fr",
   supportPhone: "+33 7 56 90 12 34",
-  whatsAppNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+33756901234",
+  whatsAppNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+212779395271",
   company: {
     name: "STRONG4K MEDIA SAS",
     address: "128 Rue La Boétie, 75008 Paris, France",
@@ -19,12 +19,12 @@ export const siteConfig = {
   },
   navLinks: [
     { label: "Abonnements", href: "/#abonnements" },
-    { label: "Offres", href: "/offres" },
+    { label: "Offres", href: "/#abonnements" },
     { label: "Panel", href: "/panel" },
   ],
   footerLinks: {
     navigation: [
-      { label: "Nos Offres", href: "/offres" },
+      { label: "Nos Offres", href: "/#abonnements" },
       { label: "Panel Reseller", href: "/panel" },
       { label: "Guides d'Installation", href: "/installation" },
       { label: "Foire Aux Questions", href: "/faq" },

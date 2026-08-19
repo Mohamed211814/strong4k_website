@@ -1,8 +1,26 @@
+"use client";
+
 import Link from "next/link";
 import { HeroVisual } from "./HeroVisual";
 import { ArrowRight, Sparkles, CheckCircle2, Play } from "lucide-react";
 
 export function Hero() {
+  const handleScrollToPlans = (e: React.MouseEvent) => {
+    const el = document.getElementById("abonnements") || document.getElementById("offres");
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleScrollToHowItWorks = (e: React.MouseEvent) => {
+    const el = document.getElementById("comment-ca-marche");
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-[90vh] lg:min-h-[105vh] pt-32 lg:pt-36 pb-16 flex items-center overflow-hidden bg-grid-pattern">
       {/* Background Orbs */}
@@ -38,7 +56,8 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
               <Link
                 href="/#abonnements"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-extrabold text-base shadow-md shadow-rose-700/25 transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-rose-500"
+                onClick={handleScrollToPlans}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-extrabold text-base shadow-md shadow-rose-700/25 transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-rose-500 cursor-pointer"
               >
                 <span>Découvrir les abonnements</span>
                 <ArrowRight className="w-5 h-5" />
@@ -46,7 +65,8 @@ export function Hero() {
 
               <Link
                 href="/#comment-ca-marche"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-base border border-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-500 shadow-sm"
+                onClick={handleScrollToHowItWorks}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-base border border-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-500 shadow-sm cursor-pointer"
               >
                 <Play className="w-4 h-4 fill-slate-900 text-slate-900" />
                 <span>Comment ça marche</span>

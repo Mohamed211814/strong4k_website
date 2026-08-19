@@ -91,8 +91,8 @@ export function HeroVisual() {
       {/* Floating Light Cards around Main Card */}
       {/* Badge 1: Smart TV */}
       <div className="absolute -top-3 -left-3 sm:top-4 sm:-left-6 bg-white px-4 py-3 rounded-2xl border border-slate-200 shadow-xl flex items-center gap-3 animate-float">
-        <div className="w-9 h-9 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-          <Tv className="w-5 h-5 text-red-600" />
+        <div className="w-9 h-9 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+          <Tv className="w-5 h-5 text-rose-700" />
         </div>
         <div>
           <p className="text-xs font-extrabold text-slate-900">Smart TV</p>
@@ -102,8 +102,8 @@ export function HeroVisual() {
 
       {/* Badge 2: Android TV */}
       <div className="absolute top-1/2 -right-4 sm:-right-8 -translate-y-1/2 bg-white px-4 py-3 rounded-2xl border border-slate-200 shadow-xl flex items-center gap-3 animate-float-delayed">
-        <div className="w-9 h-9 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-          <Zap className="w-5 h-5 text-red-600" />
+        <div className="w-9 h-9 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+          <Zap className="w-5 h-5 text-rose-700" />
         </div>
         <div>
           <p className="text-xs font-extrabold text-slate-900">Android & Fire TV</p>
@@ -113,8 +113,8 @@ export function HeroVisual() {
 
       {/* Badge 3: Mobile & Tablet */}
       <div className="absolute -bottom-4 left-6 sm:-bottom-6 sm:left-12 bg-white px-4 py-3 rounded-2xl border border-slate-200 shadow-xl flex items-center gap-3 animate-float">
-        <div className="w-9 h-9 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-          <Smartphone className="w-5 h-5 text-red-600" />
+        <div className="w-9 h-9 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+          <Smartphone className="w-5 h-5 text-rose-700" />
         </div>
         <div>
           <p className="text-xs font-extrabold text-slate-900">Mobile & Tablette</p>
@@ -123,7 +123,7 @@ export function HeroVisual() {
       </div>
 
       {/* Badge 4: Activation Rapide */}
-      <div className="absolute -bottom-2 right-4 sm:bottom-4 sm:right-6 bg-red-600 text-white px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-2">
+      <div className="absolute -bottom-2 right-4 sm:bottom-4 sm:right-6 bg-rose-700 text-white px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-2">
         <ShieldCheck className="w-4 h-4 text-white" />
         <span className="text-xs font-extrabold">Activation Instantanée</span>
       </div>

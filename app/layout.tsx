@@ -86,6 +86,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { ChatBot } from "@/components/chat/ChatBot";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -113,6 +115,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <ChatBot />
       </body>
     </html>
   );

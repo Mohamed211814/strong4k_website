@@ -3,12 +3,24 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { siteConfig } from "@/lib/config/site";
 import { Menu, X, Tv, ChevronRight } from "lucide-react";
 
 export function Navbar() {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleScrollToPlans = (e: React.MouseEvent) => {
+    if (pathname === "/") {
+      const el = document.getElementById("abonnements") || document.getElementById("offres");
+      if (el) {
+        e.preventDefault();
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,7 +85,8 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href="/#abonnements"
-              className="inline-flex items-center justify-center px-5.5 py-2.5 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-extrabold text-sm shadow-md shadow-rose-700/25 transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-rose-500"
+              onClick={handleScrollToPlans}
+              className="inline-flex items-center justify-center px-5.5 py-2.5 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-extrabold text-sm shadow-md shadow-rose-700/25 transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-rose-500 cursor-pointer"
             >
               <span>Voir les offres</span>
             </Link>
@@ -136,8 +149,11 @@ export function Navbar() {
             <div className="pt-4 border-t border-slate-200 flex flex-col gap-3">
               <Link
                 href="/#abonnements"
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full text-center py-3 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold text-sm shadow-md shadow-red-600/20"
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  handleScrollToPlans(e);
+                }}
+                className="w-full text-center py-3 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-extrabold text-sm shadow-md shadow-rose-700/25 cursor-pointer"
               >
                 Voir les offres
               </Link>

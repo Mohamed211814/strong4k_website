@@ -25,8 +25,8 @@ export function Footer() {
                 />
               </div>
               <span className="text-xl font-black tracking-tight text-slate-900 flex items-center gap-1">
-                STRONG<span className="text-red-600 font-extrabold">4K</span>
-                <span className="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+                STRONG<span className="text-rose-700 font-extrabold">4K</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-rose-700"></span>
               </span>
             </Link>
 
@@ -37,15 +37,15 @@ export function Footer() {
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <div className="flex items-center gap-1.5 text-xs text-slate-700 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm font-semibold">
-                <ShieldCheck className="w-4 h-4 text-red-600" />
+                <ShieldCheck className="w-4 h-4 text-rose-700" />
                 <span>Service Sécurisé</span>
               </div>
               <div className="flex items-center gap-1.5 text-xs text-slate-700 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm font-semibold">
-                <Tv className="w-4 h-4 text-red-600" />
+                <Tv className="w-4 h-4 text-rose-700" />
                 <span>Multi-Appareils</span>
               </div>
               <div className="flex items-center gap-1.5 text-xs text-slate-700 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm font-semibold">
-                <Lock className="w-4 h-4 text-red-600" />
+                <Lock className="w-4 h-4 text-rose-700" />
                 <span>Paiement SSL</span>
               </div>
             </div>
@@ -53,7 +53,7 @@ export function Footer() {
 
           {/* Navigation Column */}
           <div className="space-y-3">
-            <h4 className="text-xs font-black uppercase tracking-wider text-red-600">
+            <h4 className="text-xs font-black uppercase tracking-wider text-rose-700">
               Navigation
             </h4>
             <ul className="space-y-2 text-sm text-slate-600 font-medium">
@@ -61,7 +61,7 @@ export function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="hover:text-red-600 transition-colors focus:outline-none focus:underline"
+                    className="hover:text-rose-700 transition-colors focus:outline-none focus:underline"
                   >
                     {link.label}
                   </Link>
@@ -72,7 +72,7 @@ export function Footer() {
 
           {/* Enterprise Column */}
           <div className="space-y-3">
-            <h4 className="text-xs font-black uppercase tracking-wider text-red-600">
+            <h4 className="text-xs font-black uppercase tracking-wider text-rose-700">
               Entreprise
             </h4>
             <ul className="space-y-2 text-sm text-slate-600 font-medium">
@@ -80,7 +80,7 @@ export function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="hover:text-red-600 transition-colors focus:outline-none focus:underline"
+                    className="hover:text-rose-700 transition-colors focus:outline-none focus:underline"
                   >
                     {link.label}
                   </Link>
@@ -91,7 +91,7 @@ export function Footer() {
 
           {/* Legal Column */}
           <div className="space-y-3">
-            <h4 className="text-xs font-black uppercase tracking-wider text-red-600">
+            <h4 className="text-xs font-black uppercase tracking-wider text-rose-700">
               Informations
             </h4>
             <ul className="space-y-2 text-sm text-slate-600 font-medium">
@@ -99,7 +99,7 @@ export function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="hover:text-red-600 transition-colors focus:outline-none focus:underline"
+                    className="hover:text-rose-700 transition-colors focus:outline-none focus:underline"
                   >
                     {link.label}
                   </Link>

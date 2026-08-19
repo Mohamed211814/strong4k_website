@@ -33,11 +33,11 @@ export function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 space-y-16">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-4 py-1.5 rounded-full border border-red-200 shadow-sm">
+          <span className="text-xs font-bold uppercase tracking-widest text-rose-800 bg-rose-50 px-4 py-1.5 rounded-full border border-rose-200 shadow-sm">
             SIMPLICITÉ MAXIMALE
           </span>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-slate-900">
-            Commencez en <span className="text-gradient-red">quelques étapes.</span>
+            Commencez en <span className="text-rose-700">quelques étapes.</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg font-medium">
             Un processus fluide conçu pour que vous puissiez profiter de vos flux en moins de 5 minutes.
@@ -47,22 +47,22 @@ export function HowItWorks() {
         {/* Steps Layout (Horizontal on Desktop, Vertical on Mobile) */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
           {/* Timeline Connector Line for Desktop */}
-          <div className="hidden md:block absolute top-1/2 left-12 right-12 h-0.5 bg-gradient-to-r from-red-200 via-rose-300 to-red-200 -translate-y-6 z-0" />
+          <div className="hidden md:block absolute top-1/2 left-12 right-12 h-0.5 bg-rose-200 -translate-y-6 z-0" />
 
           {steps.map((step, idx) => {
             const Icon = step.icon;
             return (
               <div
                 key={step.number}
-                className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 hover:border-red-500/40 hover:shadow-xl transition-all duration-300 relative z-10 space-y-4 flex flex-col justify-between"
+                className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 hover:border-rose-500/40 hover:shadow-xl transition-all duration-300 relative z-10 space-y-4 flex flex-col justify-between"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-3xl font-black text-red-600 font-mono">
+                    <span className="text-3xl font-black text-rose-700 font-mono">
                       {step.number}
                     </span>
-                    <div className="w-10 h-10 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-red-600" />
+                    <div className="w-10 h-10 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-rose-700" />
                     </div>
                   </div>
 
