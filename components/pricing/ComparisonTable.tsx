@@ -55,8 +55,8 @@ export function ComparisonTable() {
               <th className="py-5 px-6 text-sm font-bold text-slate-700">Caractéristique</th>
               <th className="py-5 px-6 text-sm font-bold text-slate-900 text-center">1 MOIS</th>
               <th className="py-5 px-6 text-sm font-bold text-slate-900 text-center">6 MOIS</th>
-              <th className="py-5 px-6 text-sm font-black text-red-600 text-center bg-red-50/60">
-                12 MOIS <span className="text-[10px] bg-red-600 text-white font-extrabold px-1.5 py-0.5 rounded ml-1">★ MEILLEUR CHOIX</span>
+              <th className="py-5 px-6 text-sm font-black text-rose-700 text-center bg-rose-50/60">
+                12 MOIS <span className="text-[10px] bg-rose-700 text-white font-extrabold px-1.5 py-0.5 rounded ml-1">★ MEILLEUR CHOIX</span>
               </th>
             </tr>
           </thead>
@@ -66,7 +66,7 @@ export function ComparisonTable() {
                 <td className="py-4 px-6 font-bold text-slate-900">{row.label}</td>
                 <td className="py-4 px-6 text-center text-slate-600 font-medium">{row.m1}</td>
                 <td className="py-4 px-6 text-center text-slate-700 font-medium">{row.m6}</td>
-                <td className="py-4 px-6 text-center font-bold text-red-700 bg-red-50/40">
+                <td className="py-4 px-6 text-center font-bold text-rose-900 bg-rose-50/40">
                   {row.m12}
                 </td>
               </tr>
@@ -77,10 +77,10 @@ export function ComparisonTable() {
 
       {/* Mobile Stacked View */}
       <div className="block md:hidden space-y-4">
-        <div className="bg-white p-5 rounded-2xl border-2 border-red-200 shadow-md space-y-3">
+        <div className="bg-white p-5 rounded-2xl border-2 border-rose-200 shadow-md space-y-3">
           <div className="flex items-center justify-between border-b border-slate-100 pb-2">
-            <span className="text-sm font-black text-red-600">12 MOIS (Formule Populaire)</span>
-            <span className="text-[10px] bg-red-600 text-white font-extrabold px-2 py-0.5 rounded">
+            <span className="text-sm font-black text-rose-700">12 MOIS (Formule Populaire)</span>
+            <span className="text-[10px] bg-rose-700 text-white font-extrabold px-2 py-0.5 rounded">
               MEILLEURE VENTE
             </span>
           </div>

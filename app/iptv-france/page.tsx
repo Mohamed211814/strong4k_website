@@ -27,7 +27,7 @@ export default function IptvFrancePage() {
             <span>OPTIMISÉ POUR LES RÉSEAUX EN FRANCE</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 leading-tight">
             IPTV France 4K : <br />
             <span className="text-gradient-red">Votre télé en direct avec haute stabilité.</span>
           </h1>

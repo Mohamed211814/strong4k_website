@@ -13,16 +13,16 @@ export function HeroVisual() {
         {/* Top Header of Fictional UI */}
         <div className="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-red-500" />
+            <div className="w-3 h-3 rounded-full bg-rose-600" />
             <div className="w-3 h-3 rounded-full bg-amber-400" />
             <div className="w-3 h-3 rounded-full bg-emerald-500" />
             <span className="ml-2 text-xs font-black text-slate-900 tracking-wider flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-red-600" /> ESPACE STRONG4K
+              <Sparkles className="w-3.5 h-3.5 text-rose-700" /> ESPACE STRONG4K
             </span>
           </div>
 
-          <div className="flex items-center gap-2 text-[11px] font-extrabold text-red-700 bg-red-50 px-3 py-1 rounded-full border border-red-200">
-            <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-ping" />
+          <div className="flex items-center gap-2 text-[11px] font-extrabold text-rose-900 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
+            <span className="w-1.5 h-1.5 rounded-full bg-rose-700 animate-ping" />
             <span>FLUX 4K ACTIF</span>
           </div>
         </div>
@@ -32,28 +32,28 @@ export function HeroVisual() {
           {/* Navigation Bar inside Fictional UI */}
           <div className="flex items-center justify-between text-xs font-bold border-b border-slate-100 pb-2">
             <div className="flex items-center gap-3">
-              <span className="text-white font-extrabold bg-red-600 px-3 py-1 rounded-lg flex items-center gap-1 shadow-sm">
+              <span className="text-white font-extrabold bg-rose-700 px-3 py-1 rounded-lg flex items-center gap-1 shadow-sm">
                 <Radio className="w-3 h-3 text-white animate-pulse" /> En Direct
               </span>
               <span className="text-slate-600 hover:text-slate-900 transition-colors cursor-pointer font-bold">À découvrir</span>
               <span className="text-slate-600 hover:text-slate-900 transition-colors cursor-pointer font-bold">Favoris</span>
             </div>
-            <span className="text-[10px] text-red-600 font-mono font-black bg-red-50 px-2 py-0.5 rounded border border-red-200">4K 60FPS</span>
+            <span className="text-[10px] text-rose-800 font-mono font-black bg-rose-50 px-2 py-0.5 rounded border border-rose-200">4K 60FPS</span>
           </div>
 
           {/* Fictional Featured Banner Card */}
-          <div className="relative rounded-xl overflow-hidden h-36 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 p-5 shadow-md flex flex-col justify-end text-white">
-            <div className="absolute top-3 right-3 bg-white text-red-700 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded shadow">
+          <div className="relative rounded-xl overflow-hidden h-36 bg-rose-700 p-5 shadow-md flex flex-col justify-end text-white">
+            <div className="absolute top-3 right-3 bg-white text-rose-800 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded shadow">
               DIRECT 4K
             </div>
             <div className="space-y-1 relative z-10">
-              <span className="text-[10px] font-black text-red-100 uppercase tracking-widest">
+              <span className="text-[10px] font-black text-rose-100 uppercase tracking-widest">
                 Événement Spécial
               </span>
               <h4 className="text-sm sm:text-base font-black text-white tracking-tight">
                 Grand Rendez-Vous Divertissement 4K
               </h4>
-              <p className="text-[11px] text-red-50 line-clamp-1 font-medium">
+              <p className="text-[11px] text-rose-50 line-clamp-1 font-medium">
                 Profitez d'un flux d'une netteté exceptionnelle sur tous vos écrans.
               </p>
             </div>

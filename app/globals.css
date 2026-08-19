@@ -4,25 +4,19 @@
   --bg-main: #ffffff;
   --bg-secondary: #f8fafc;
   --bg-card: #ffffff;
-  --bg-card-hover: #ffffff;
   --border-subtle: #e2e8f0;
-  --border-glow: rgba(220, 38, 38, 0.4);
+  --border-ruby: #be123c;
   --text-primary: #0f172a;
   --text-secondary: #475569;
-  --accent-red: #dc2626;
-  --accent-red-dark: #b91c1c;
-  --accent-crimson-glow: #ef4444;
-  --accent-rose: #e11d48;
-  --accent-amber: #d97706;
+  --accent-ruby: #be123c;
+  --accent-ruby-hover: #9f1239;
 }
 
 @theme inline {
   --color-main: var(--bg-main);
   --color-secondary: var(--bg-secondary);
   --color-card: var(--bg-card);
-  --color-card-hover: var(--bg-card-hover);
-  --color-red-accent: var(--accent-red);
-  --color-crimson-accent: var(--accent-crimson-glow);
+  --color-ruby-accent: var(--accent-ruby);
 }
 
 body {
@@ -33,67 +27,49 @@ body {
   min-height: 100vh;
 }
 
-/* Custom Utilities for Premium Heavy White Vibe */
+/* Custom Utilities for Pure Heavy White & Solid Deep Ruby Red Theme (ZERO GRADIENTS) */
 .glass-nav {
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #e2e8f0;
   box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
 }
 
 .glass-card {
   background: #ffffff;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid #e2e8f0;
-  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
 }
 
 .glass-card-hover {
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.25s ease-in-out;
 }
 
 .glass-card-hover:hover {
   background: #ffffff;
-  border-color: rgba(220, 38, 38, 0.4);
+  border-color: #be123c;
   transform: translateY(-3px);
-  box-shadow: 0 20px 40px -10px rgba(220, 38, 38, 0.12);
+  box-shadow: 0 12px 30px -5px rgba(190, 18, 60, 0.12);
 }
 
-/* Atmospheric Glow Orbs for Light Mode */
+/* Disable All Glow Orbs (NO GRADIENTS) */
 .glow-orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(110px);
-  pointer-events: none;
-  opacity: 0.25;
-  z-index: 0;
+  display: none !important;
 }
 
-.glow-violet,
-.glow-red {
-  background: radial-gradient(circle, rgba(220, 38, 38, 0.2) 0%, rgba(220, 38, 38, 0) 70%);
-}
-
-.glow-blue,
-.glow-crimson {
-  background: radial-gradient(circle, rgba(244, 63, 94, 0.18) 0%, rgba(225, 29, 72, 0) 70%);
-}
-
-/* Text Gradients for Light Mode */
+/* SOLID TEXT COLORS (ZERO GRADIENTS) */
 .text-gradient-violet,
-.text-gradient-red {
-  background: linear-gradient(135deg, #0f172a 20%, #dc2626 75%, #b91c1c 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
+.text-gradient-indigo,
 .text-gradient-blue,
-.text-gradient-crimson {
-  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 60%, #990000 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.text-gradient-red,
+.text-gradient-crimson,
+.text-gradient-emerald,
+.text-gradient-ruby {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: initial !important;
+  color: #be123c !important;
 }
 
 /* Subtly Animated Background Grid for Heavy White Theme */

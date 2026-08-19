@@ -29,7 +29,7 @@ export default function AbonnementIptvPage() {
             <span>OFFRE STREAMING HAUT DÉBIT</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 leading-tight">
             Abonnement IPTV en France : <br />
             <span className="text-gradient-red">La TV moderne 4K sur tous vos écrans.</span>
           </h1>

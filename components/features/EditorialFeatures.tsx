@@ -144,7 +144,7 @@ export function EditorialFeatures() {
         </div>
 
         {/* Feature 3: Une activation simple (Centered Visual) */}
-        <div className="bg-gradient-to-br from-red-50 via-slate-50 to-rose-50 rounded-3xl p-8 sm:p-12 text-center max-w-4xl mx-auto space-y-8 relative overflow-hidden border-2 border-red-200/80 shadow-2xl shadow-red-500/10 text-slate-900">
+        <div className="bg-red-50/60 rounded-3xl p-8 sm:p-12 text-center max-w-4xl mx-auto space-y-8 relative overflow-hidden border-2 border-red-200 shadow-xl text-slate-900">
           <div className="space-y-4 relative z-10">
             <span className="text-xs font-black uppercase tracking-widest text-red-600">
               03 — MISE EN ROUTE RAPIDE

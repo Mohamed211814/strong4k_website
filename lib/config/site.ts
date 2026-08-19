@@ -18,29 +18,23 @@ export const siteConfig = {
     host: "Vercel Inc. - 440 N Barranca Ave #4133, Covina, CA 91723, USA",
   },
   navLinks: [
-    { label: "Accueil", href: "/" },
     { label: "Abonnements", href: "/#abonnements" },
     { label: "Offres", href: "/offres" },
     { label: "Panel", href: "/panel" },
   ],
   footerLinks: {
     navigation: [
-      { label: "Accueil", href: "/" },
-      { label: "Abonnement IPTV", href: "/abonnement-iptv" },
-      { label: "IPTV France", href: "/iptv-france" },
       { label: "Nos Offres", href: "/offres" },
       { label: "Panel Reseller", href: "/panel" },
-      { label: "Compatibilité", href: "/compatibilite" },
       { label: "Guides d'Installation", href: "/installation" },
       { label: "Foire Aux Questions", href: "/faq" },
     ],
     company: [
-      { label: "À propos de STRONG4K", href: "/a-propos" },
+      { label: "À propos", href: "/a-propos" },
       { label: "Blog & Actualités", href: "/blog" },
       { label: "Nous Contacter", href: "/contact" },
     ],
     legal: [
-      { label: "Mentions Légales", href: "/mentions-legales" },
       { label: "Conditions Générales de Vente", href: "/conditions-generales" },
       { label: "Politique de Confidentialité", href: "/politique-de-confidentialite" },
       { label: "Politique de Remboursement", href: "/politique-de-remboursement" },

@@ -7,15 +7,15 @@ export function StatementSection() {
       <div className="glow-orb glow-red w-[600px] h-[600px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-15" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10 space-y-8">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider shadow-sm">
-          <Sparkles className="w-3.5 h-3.5 text-red-600" />
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-900 text-xs font-bold uppercase tracking-wider shadow-sm">
+          <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
           <span>SIMPLICITÉ & ERGONOMIE</span>
         </div>
 
         <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-tight">
           Découvrez notre service IPTV.
           <br />
-          <span className="text-gradient-red">Tout ce dont vous avez besoin.</span>
+          <span className="text-gradient-indigo">Tout ce dont vous avez besoin.</span>
           <br />
           <span className="text-slate-500">Rien de superflu.</span>
         </h2>
@@ -26,9 +26,9 @@ export function StatementSection() {
 
         {/* Minimalist Visual Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
-          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 text-left space-y-3 hover:border-red-500/40 hover:shadow-xl transition-all duration-300">
-            <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-              <MonitorPlay className="w-6 h-6 text-red-600" />
+          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 text-left space-y-3 hover:border-indigo-400 hover:shadow-xl transition-all duration-300">
+            <div className="w-12 h-12 rounded-xl bg-indigo-50 border border-indigo-200 flex items-center justify-center">
+              <MonitorPlay className="w-6 h-6 text-indigo-600" />
             </div>
             <h3 className="text-lg font-bold text-slate-900">Interface Épurée</h3>
             <p className="text-sm text-slate-600 font-medium leading-relaxed">
@@ -36,9 +36,9 @@ export function StatementSection() {
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 text-left space-y-3 hover:border-red-500/40 hover:shadow-xl transition-all duration-300">
-            <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-              <SlidersHorizontal className="w-6 h-6 text-red-600" />
+          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 text-left space-y-3 hover:border-indigo-400 hover:shadow-xl transition-all duration-300">
+            <div className="w-12 h-12 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+              <SlidersHorizontal className="w-6 h-6 text-rose-600" />
             </div>
             <h3 className="text-lg font-bold text-slate-900">Stabilité Prioritaire</h3>
             <p className="text-sm text-slate-600 font-medium leading-relaxed">
@@ -46,9 +46,9 @@ export function StatementSection() {
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 text-left space-y-3 hover:border-red-500/40 hover:shadow-xl transition-all duration-300">
-            <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-              <Shield className="w-6 h-6 text-red-600" />
+          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 text-left space-y-3 hover:border-indigo-400 hover:shadow-xl transition-all duration-300">
+            <div className="w-12 h-12 rounded-xl bg-indigo-50 border border-indigo-200 flex items-center justify-center">
+              <Shield className="w-6 h-6 text-indigo-600" />
             </div>
             <h3 className="text-lg font-bold text-slate-900">Transparence Totale</h3>
             <p className="text-sm text-slate-600 font-medium leading-relaxed">

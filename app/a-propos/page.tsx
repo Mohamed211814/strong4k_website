@@ -5,7 +5,7 @@ import { FinalCta } from "@/components/cta/FinalCta";
 import { ShieldCheck, Tv, Headphones, Lock, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "À propos de STRONG4K - Engagement & Qualité 4K",
+  title: "À propos - STRONG4K | Qualité 4K & Stabilité",
   description:
     "Découvrez la philosophie de STRONG4K : une expérience TV 4K Ultra HD moderne, réactive et conforme pour vos appareils compatibles en France.",
   alternates: {
@@ -21,11 +21,11 @@ export default function AProposPage() {
 
         {/* Hero */}
         <div className="py-8 text-center max-w-4xl mx-auto space-y-6">
-          <span className="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-4 py-1.5 rounded-full border border-red-200 shadow-sm">
+          <span className="text-xs font-bold uppercase tracking-widest text-rose-800 bg-rose-50 px-4 py-1.5 rounded-full border border-rose-200 shadow-sm">
             NOTRE ENGAGEMENT
           </span>
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
-            À propos de <span className="text-gradient-red">STRONG4K</span>
+            À propos
           </h1>
           <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
             Nous avons conçu STRONG4K pour proposer une alternative 4K Ultra HD moderne, claire et transparente à l'offre télévisuelle traditionnelle.
@@ -35,8 +35,8 @@ export default function AProposPage() {
         {/* Philosophy Blocks */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-md shadow-slate-200/50 space-y-4">
-            <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-              <Tv className="w-6 h-6 text-red-600" />
+            <div className="w-12 h-12 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+              <Tv className="w-6 h-6 text-rose-700" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">Focus sur l'expérience utilisateur 4K</h3>
             <p className="text-sm text-slate-600 font-medium leading-relaxed">
@@ -45,8 +45,8 @@ export default function AProposPage() {
           </div>
 
           <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-md shadow-slate-200/50 space-y-4">
-            <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-              <ShieldCheck className="w-6 h-6 text-red-600" />
+            <div className="w-12 h-12 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+              <ShieldCheck className="w-6 h-6 text-rose-700" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">Conformité et Transparence</h3>
             <p className="text-sm text-slate-600 font-medium leading-relaxed">
