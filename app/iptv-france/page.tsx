@@ -17,22 +17,22 @@ export const metadata: Metadata = {
 
 export default function IptvFrancePage() {
   return (
-    <div className="pt-28 pb-16 space-y-16">
+    <div className="pt-28 pb-16 space-y-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <Breadcrumbs items={[{ name: "IPTV France", url: "/iptv-france" }]} />
 
         <div className="py-12 text-center max-w-4xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-wider">
-            <Globe className="w-3.5 h-3.5 text-cyan-400" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider shadow-sm">
+            <Globe className="w-3.5 h-3.5 text-red-600" />
             <span>OPTIMISÉ POUR LES RÉSEAUX EN FRANCE</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-            IPTV France : <br />
-            <span className="text-gradient-blue">Votre télé en direct avec haute stabilité.</span>
+          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
+            IPTV France 4K : <br />
+            <span className="text-gradient-red">Votre télé en direct avec haute stabilité.</span>
           </h1>
 
-          <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
             Profitez des meilleures performances de diffusion sur l'ensemble des réseaux Fibre et ADSL en France.
             Une interface épurée sans décalage ni interruption.
           </p>
@@ -40,22 +40,22 @@ export default function IptvFrancePage() {
 
         {/* Benefits Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-6">
-          <div className="glass-card p-8 rounded-3xl border border-white/10 space-y-4">
-            <div className="w-12 h-12 rounded-xl bg-purple-950/60 border border-purple-500/30 flex items-center justify-center">
-              <Tv className="w-6 h-6 text-purple-400" />
+          <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-md shadow-slate-200/50 space-y-4 hover:border-red-500/40 hover:shadow-xl transition-all duration-300">
+            <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
+              <Tv className="w-6 h-6 text-red-600" />
             </div>
-            <h3 className="text-xl font-bold text-white">Compatibilité Box & Smart TV</h3>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <h3 className="text-xl font-bold text-slate-900">Compatibilité Box & Smart TV</h3>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">
               Que vous utilisiez une Smart TV Samsung, LG, Sony ou un boîtier Android TV branché sur votre télévision, l'installation se fait en toute simplicité.
             </p>
           </div>
 
-          <div className="glass-card p-8 rounded-3xl border border-white/10 space-y-4">
-            <div className="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/30 flex items-center justify-center">
-              <Shield className="w-6 h-6 text-cyan-400" />
+          <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-md shadow-slate-200/50 space-y-4 hover:border-red-500/40 hover:shadow-xl transition-all duration-300">
+            <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
+              <Shield className="w-6 h-6 text-red-600" />
             </div>
-            <h3 className="text-xl font-bold text-white">Support Technique Dédié</h3>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <h3 className="text-xl font-bold text-slate-900">Support Technique Dédié</h3>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">
               Notre équipe francophone est disponible 7j/7 pour vous aider à paramétrer vos applications et garantir une qualité de visionnage irréprochable.
             </p>
           </div>

@@ -20,8 +20,8 @@ export const blogPosts: BlogPost[] = [
     category: "Guides d'Installation",
     readTime: "5 min de lecture",
     publishedAt: "2026-02-10",
-    author: "Équipe Technique STREAMORA",
-    seoTitle: "Comment Installer IPTV sur Smart TV | Guide Complet STREAMORA",
+    author: "Équipe Technique STRONG4K",
+    seoTitle: "Comment Installer IPTV sur Smart TV | Guide Complet STRONG4K",
     seoDescription: "Découvrez notre guide pratique pas à pas pour configurer votre service TV sur Smart TV Samsung, LG webOS ou Android TV rapidement.",
     content: `
       <h2>Introduction au streaming sur Smart TV</h2>
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
       <p>Recherchez des lecteurs multimédias reconnus et téléchargez l'application de votre choix.</p>
 
       <h3>Étape 3 : Saisir les identifiants ou le lien d'accès</h3>
-      <p>Lors de la souscription à votre formule <strong>STREAMORA</strong>, vous recevez un message de confirmation contenant vos accès (fichier M3U ou identifiants Xtream API).</p>
+      <p>Lors de la souscription à votre formule <strong>STRONG4K</strong>, vous recevez un message de confirmation contenant vos accès (fichier M3U ou identifiants Xtream API).</p>
       <ol>
         <li>Ouvrez l'application installée sur votre Smart TV.</li>
         <li>Accédez au menu Configuration / Réglages.</li>
@@ -64,8 +64,8 @@ export const blogPosts: BlogPost[] = [
     category: "Boîtiers TV",
     readTime: "6 min de lecture",
     publishedAt: "2026-02-14",
-    author: "Support Technique STREAMORA",
-    seoTitle: "Configuration Android TV & Fire TV Stick | Tutoriel STREAMORA",
+    author: "Support Technique STRONG4K",
+    seoTitle: "Configuration Android TV & Fire TV Stick | Tutoriel STRONG4K",
     seoDescription: "Tutoriel étape par étape pour paramétrer votre clé Amazon Fire TV Stick ou boîtier Android TV et profiter de vos programmes en 4K.",
     content: `
       <h2>Pourquoi privilégier les boîtiers Android TV et Fire TV ?</h2>
@@ -75,7 +75,7 @@ export const blogPosts: BlogPost[] = [
       <ol>
         <li>Allumez votre Fire TV et accédez au menu <strong>Rechercher</strong>.</li>
         <li>Téléchargez un lecteur multimédia compatible disponible sur l'Amazon Appstore.</li>
-        <li>Ouvrez le lecteur et ajoutez la playlist de votre abonnement <strong>STREAMORA</strong>.</li>
+        <li>Ouvrez le lecteur et ajoutez la playlist de votre abonnement <strong>STRONG4K</strong>.</li>
       </ol>
 
       <h3>Configuration des paramètres vidéo et audio</h3>
@@ -96,8 +96,8 @@ export const blogPosts: BlogPost[] = [
     category: "Informations & Conseils",
     readTime: "7 min de lecture",
     publishedAt: "2026-02-16",
-    author: "Rédaction STREAMORA",
-    seoTitle: "Télévision par Internet (IPTV) : Le Guide pour Débutants | STREAMORA",
+    author: "Rédaction STRONG4K",
+    seoTitle: "Télévision par Internet (IPTV) : Le Guide pour Débutants | STRONG4K",
     seoDescription: "Découvrez tout ce qu'il faut savoir sur la TV par Internet (IPTV en France) : fonctionnement, prérequis réseau, compatibilité et critères de choix.",
     content: `
       <h2>Comprendre la Télévision par Internet (IPTV)</h2>
@@ -119,7 +119,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
 
       <h3>Conclusion</h3>
-      <p>La TV par Internet vous permet de personnaliser votre divertissement selon vos besoins. Avec <strong>STREAMORA</strong>, bénéficiez d'une solution claire, réactive et compatible avec l'ensemble de vos appareils d'aujourd'hui et de demain.</p>
+      <p>La TV par Internet vous permet de personnaliser votre divertissement selon vos besoins. Avec <strong>STRONG4K</strong>, bénéficiez d'une solution claire, réactive et compatible avec l'ensemble de vos appareils d'aujourd'hui et de demain.</p>
     `,
   },
 ];

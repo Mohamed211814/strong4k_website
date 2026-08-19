@@ -7,9 +7,9 @@ import Link from "next/link";
 import { Tv, Flame, Smartphone, Monitor, Tablet, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Compatibilité Appareils - Smart TV, Fire TV, Android & Mobile",
+  title: "Compatibilité Appareils 4K - Smart TV, Fire TV, Android & Mobile",
   description:
-    "Vérifiez la compatibilité de vos appareils avec le service STREAMORA. Guides d'installation pas à pas pour Smart TV, Amazon Fire TV, Android, iPhone et PC.",
+    "Vérifiez la compatibilité de vos appareils avec le service STRONG4K. Guides d'installation pas à pas pour Smart TV, Amazon Fire TV, Android, iPhone et PC.",
   alternates: {
     canonical: `${siteConfig.domain}/compatibilite`,
   },
@@ -50,19 +50,19 @@ export default function CompatibilitePage() {
   ];
 
   return (
-    <div className="pt-28 pb-16 space-y-16">
+    <div className="pt-28 pb-16 space-y-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <Breadcrumbs items={[{ name: "Compatibilité", url: "/compatibilite" }]} />
 
         <div className="py-12 text-center max-w-4xl mx-auto space-y-6">
-          <span className="text-xs font-bold uppercase tracking-widest text-purple-400 bg-purple-950/60 px-3.5 py-1 rounded-full border border-purple-500/30">
+          <span className="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-4 py-1.5 rounded-full border border-red-200 shadow-sm">
             DISPONIBLE PARTOUT
           </span>
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-            Compatibilité des appareils
+          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
+            Compatibilité des appareils <span className="text-gradient-red">4K</span>
           </h1>
-          <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            STREAMORA s'intègre parfaitement avec la majorité des équipements télévisuels et multimédias récents.
+          <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
+            STRONG4K s'intègre parfaitement avec la majorité des équipements télévisuels et multimédias récents.
           </p>
         </div>
 
@@ -73,19 +73,19 @@ export default function CompatibilitePage() {
             return (
               <div
                 key={guide.title}
-                className="glass-card p-6 rounded-2xl border border-white/10 space-y-4 flex flex-col justify-between glass-card-hover"
+                className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 space-y-4 flex flex-col justify-between hover:border-red-500/40 hover:shadow-xl transition-all duration-300"
               >
                 <div className="space-y-3">
-                  <div className="w-12 h-12 rounded-xl bg-purple-950/60 border border-purple-500/30 flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-purple-400" />
+                  <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
+                    <Icon className="w-6 h-6 text-red-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-white">{guide.title}</h3>
-                  <p className="text-xs text-gray-400 leading-relaxed">{guide.desc}</p>
+                  <h3 className="text-xl font-bold text-slate-900">{guide.title}</h3>
+                  <p className="text-xs text-slate-600 font-medium leading-relaxed">{guide.desc}</p>
                 </div>
 
                 <Link
                   href={guide.href}
-                  className="inline-flex items-center justify-between py-2 px-4 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-bold text-purple-300 border border-white/5 transition-colors"
+                  className="inline-flex items-center justify-between py-2.5 px-4 rounded-xl bg-slate-50 hover:bg-red-50 text-xs font-bold text-red-600 border border-slate-200 transition-colors"
                 >
                   <span>Accéder au guide complet</span>
                   <ArrowRight className="w-4 h-4" />

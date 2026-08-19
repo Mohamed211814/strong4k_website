@@ -61,7 +61,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   });
 
   return (
-    <div className="pt-28 pb-16 space-y-16">
+    <div className="pt-28 pb-16 space-y-16 bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         <Link
           href="/blog"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-gray-400 hover:text-white transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-slate-900 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Retour aux articles</span>
@@ -86,31 +86,31 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Header */}
         <div className="space-y-4">
           <div className="flex flex-wrap items-center gap-3 text-xs">
-            <span className="font-bold text-purple-400 uppercase tracking-wider bg-purple-950/60 px-3 py-1 rounded-full border border-purple-500/30">
+            <span className="font-bold text-red-700 uppercase tracking-wider bg-red-50 px-3 py-1 rounded-full border border-red-200">
               {post.category}
             </span>
-            <div className="flex items-center gap-1 text-gray-400 font-mono">
+            <div className="flex items-center gap-1 text-slate-500 font-mono font-medium">
               <Clock className="w-3.5 h-3.5" />
               <span>{post.readTime}</span>
             </div>
-            <div className="flex items-center gap-1 text-gray-400 font-mono">
-              <Calendar className="w-3.5 h-3.5 text-cyan-400" />
+            <div className="flex items-center gap-1 text-slate-500 font-mono font-medium">
+              <Calendar className="w-3.5 h-3.5 text-red-600" />
               <span>Publié le {post.publishedAt}</span>
             </div>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 leading-tight">
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-2 text-xs text-gray-400 pt-2 border-b border-white/10 pb-6">
-            <User className="w-4 h-4 text-purple-400" />
-            <span>Par <strong className="text-white">{post.author}</strong></span>
+          <div className="flex items-center gap-2 text-xs text-slate-500 pt-2 border-b border-slate-200 pb-6 font-medium">
+            <User className="w-4 h-4 text-red-600" />
+            <span>Par <strong className="text-slate-900 font-bold">{post.author}</strong></span>
           </div>
         </div>
 
         {/* Content Body */}
-        <div className="glass-card p-8 sm:p-10 rounded-3xl border border-white/10 prose prose-invert max-w-none space-y-6 text-gray-300 text-sm sm:text-base leading-relaxed">
+        <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md shadow-slate-200/50 prose prose-slate max-w-none space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
       </div>

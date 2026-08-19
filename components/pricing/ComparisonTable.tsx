@@ -43,30 +43,30 @@ export function ComparisonTable() {
   return (
     <div className="space-y-6 pt-12">
       <div className="text-center space-y-2">
-        <h3 className="text-2xl font-extrabold text-white">Comparez nos formules</h3>
-        <p className="text-sm text-gray-400">Toutes nos offres sont sans engagement et incluent une assistance complète.</p>
+        <h3 className="text-2xl font-black text-slate-900">Comparez nos formules 4K</h3>
+        <p className="text-sm text-slate-600 font-medium">Toutes nos offres sont sans engagement et incluent une assistance complète.</p>
       </div>
 
       {/* Desktop Table View */}
-      <div className="hidden md:block glass-card rounded-3xl border border-white/10 overflow-hidden">
+      <div className="hidden md:block bg-white rounded-3xl border border-slate-200 shadow-md shadow-slate-200/50 overflow-hidden">
         <table className="w-full text-left border-collapse">
           <thead>
-            <tr className="border-b border-white/10 bg-white/[0.02]">
-              <th className="py-5 px-6 text-sm font-bold text-gray-300">Caractéristique</th>
-              <th className="py-5 px-6 text-sm font-bold text-white text-center">1 MOIS</th>
-              <th className="py-5 px-6 text-sm font-bold text-white text-center">6 MOIS</th>
-              <th className="py-5 px-6 text-sm font-bold text-purple-400 text-center bg-purple-950/20">
-                12 MOIS <span className="text-[10px] text-amber-400 font-extrabold ml-1">★ BEST</span>
+            <tr className="border-b border-slate-200 bg-slate-50">
+              <th className="py-5 px-6 text-sm font-bold text-slate-700">Caractéristique</th>
+              <th className="py-5 px-6 text-sm font-bold text-slate-900 text-center">1 MOIS</th>
+              <th className="py-5 px-6 text-sm font-bold text-slate-900 text-center">6 MOIS</th>
+              <th className="py-5 px-6 text-sm font-black text-red-600 text-center bg-red-50/60">
+                12 MOIS <span className="text-[10px] bg-red-600 text-white font-extrabold px-1.5 py-0.5 rounded ml-1">★ MEILLEUR CHOIX</span>
               </th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-white/5 text-xs sm:text-sm">
+          <tbody className="divide-y divide-slate-100 text-xs sm:text-sm">
             {comparisonRows.map((row, idx) => (
-              <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
-                <td className="py-4 px-6 font-semibold text-gray-300">{row.label}</td>
-                <td className="py-4 px-6 text-center text-gray-400">{row.m1}</td>
-                <td className="py-4 px-6 text-center text-gray-300">{row.m6}</td>
-                <td className="py-4 px-6 text-center font-bold text-purple-300 bg-purple-950/10">
+              <tr key={idx} className="hover:bg-slate-50/60 transition-colors">
+                <td className="py-4 px-6 font-bold text-slate-900">{row.label}</td>
+                <td className="py-4 px-6 text-center text-slate-600 font-medium">{row.m1}</td>
+                <td className="py-4 px-6 text-center text-slate-700 font-medium">{row.m6}</td>
+                <td className="py-4 px-6 text-center font-bold text-red-700 bg-red-50/40">
                   {row.m12}
                 </td>
               </tr>
@@ -77,18 +77,18 @@ export function ComparisonTable() {
 
       {/* Mobile Stacked View */}
       <div className="block md:hidden space-y-4">
-        <div className="glass-card p-5 rounded-2xl border border-purple-500/30 space-y-3">
-          <div className="flex items-center justify-between border-b border-white/10 pb-2">
-            <span className="text-sm font-bold text-purple-400">12 MOIS (Formule Populaire)</span>
-            <span className="text-[10px] bg-purple-600 text-white font-extrabold px-2 py-0.5 rounded">
-              TOP VENTE
+        <div className="bg-white p-5 rounded-2xl border-2 border-red-200 shadow-md space-y-3">
+          <div className="flex items-center justify-between border-b border-slate-100 pb-2">
+            <span className="text-sm font-black text-red-600">12 MOIS (Formule Populaire)</span>
+            <span className="text-[10px] bg-red-600 text-white font-extrabold px-2 py-0.5 rounded">
+              MEILLEURE VENTE
             </span>
           </div>
           <div className="space-y-2 text-xs">
             {comparisonRows.map((r, i) => (
-              <div key={i} className="flex justify-between border-b border-white/5 pb-1">
-                <span className="text-gray-400">{r.label} :</span>
-                <span className="font-semibold text-white">{r.m12}</span>
+              <div key={i} className="flex justify-between border-b border-slate-100 pb-1">
+                <span className="text-slate-500 font-medium">{r.label} :</span>
+                <span className="font-bold text-slate-900">{r.m12}</span>
               </div>
             ))}
           </div>

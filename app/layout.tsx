@@ -15,8 +15,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
   title: {
-    default: "Abonnement IPTV France | STREAMORA",
-    template: "%s | STREAMORA",
+    default: "Abonnement IPTV 4K France | STRONG4K",
+    template: "%s | STRONG4K",
   },
   description: siteConfig.description,
   keywords: [
@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "IPTV Android TV",
     "télévision sur internet",
     "TV en ligne",
-    "STREAMORA",
+    "STRONG4K",
+    "IPTV 4K",
   ],
   authors: [{ name: siteConfig.brandName }],
   creator: siteConfig.brandName,
@@ -35,18 +36,49 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteConfig.domain,
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "android-chrome-192x192",
+        url: "/android-chrome-192x192.png",
+      },
+      {
+        rel: "android-chrome-512x512",
+        url: "/android-chrome-512x512.png",
+      },
+    ],
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
     locale: siteConfig.language,
     url: siteConfig.domain,
-    title: "Abonnement IPTV France | STREAMORA",
+    title: "Abonnement IPTV 4K France | STRONG4K",
     description: siteConfig.description,
     siteName: siteConfig.brandName,
+    images: [
+      {
+        url: "/images/logo-og.png",
+        width: 512,
+        height: 512,
+        alt: siteConfig.brandName,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Abonnement IPTV France | STREAMORA",
+    title: "Abonnement IPTV 4K France | STRONG4K",
     description: siteConfig.description,
+    images: ["/images/logo-og.png"],
   },
   robots: {
     index: true,
@@ -63,7 +95,7 @@ export default function RootLayout({
   const siteSchema = getWebsiteSchema();
 
   return (
-    <html lang="fr" className={`${inter.variable} scroll-smooth`}>
+    <html lang="fr" className={`${inter.variable} scroll-smooth`} suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -74,7 +106,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
         />
       </head>
-      <body className="min-h-screen bg-[#050507] text-white antialiased flex flex-col justify-between selection:bg-purple-600 selection:text-white">
+      <body
+        className="min-h-screen bg-white text-slate-900 antialiased flex flex-col justify-between selection:bg-red-600 selection:text-white"
+        suppressHydrationWarning
+      >
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

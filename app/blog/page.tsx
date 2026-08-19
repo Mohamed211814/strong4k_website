@@ -16,19 +16,19 @@ export const metadata: Metadata = {
 
 export default function BlogIndexPage() {
   return (
-    <div className="pt-28 pb-16 space-y-16">
+    <div className="pt-28 pb-16 space-y-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <Breadcrumbs items={[{ name: "Blog", url: "/blog" }]} />
 
         <div className="py-8 text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-950/60 border border-purple-500/30 text-purple-300 text-xs font-semibold uppercase tracking-wider">
-            <BookOpen className="w-3.5 h-3.5 text-purple-400" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider shadow-sm">
+            <BookOpen className="w-3.5 h-3.5 text-red-600" />
             <span>ARTICLES & CONSEILS</span>
           </div>
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-            Le Blog STREAMORA
+          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
+            Le Blog <span className="text-gradient-red">STRONG4K</span>
           </h1>
-          <p className="text-gray-300 text-base sm:text-lg">
+          <p className="text-slate-600 text-base sm:text-lg font-medium">
             Retrouvez tous nos guides pratiques pour tirer le meilleur parti de vos équipements connectés.
           </p>
         </div>
@@ -38,37 +38,37 @@ export default function BlogIndexPage() {
           {blogPosts.map((post) => (
             <article
               key={post.slug}
-              className="glass-card rounded-3xl border border-white/10 overflow-hidden flex flex-col justify-between glass-card-hover"
+              className="bg-white rounded-3xl border border-slate-200 shadow-md shadow-slate-200/50 overflow-hidden flex flex-col justify-between hover:border-red-500/40 hover:shadow-xl transition-all duration-300"
             >
               <div className="p-6 space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-bold text-purple-400 uppercase tracking-wider bg-purple-950/60 px-3 py-1 rounded-full border border-purple-500/20">
+                  <span className="text-[11px] font-bold text-red-700 uppercase tracking-wider bg-red-50 px-3 py-1 rounded-full border border-red-200">
                     {post.category}
                   </span>
-                  <div className="flex items-center gap-1 text-[11px] text-gray-400 font-mono">
+                  <div className="flex items-center gap-1 text-[11px] text-slate-400 font-mono font-semibold">
                     <Clock className="w-3.5 h-3.5" />
                     <span>{post.readTime}</span>
                   </div>
                 </div>
 
-                <h2 className="text-xl font-bold text-white leading-snug hover:text-purple-300 transition-colors">
+                <h2 className="text-xl font-extrabold text-slate-900 leading-snug hover:text-red-600 transition-colors">
                   <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                 </h2>
 
-                <p className="text-xs text-gray-400 leading-relaxed line-clamp-3">
+                <p className="text-xs text-slate-600 font-medium leading-relaxed line-clamp-3">
                   {post.excerpt}
                 </p>
               </div>
 
-              <div className="p-6 pt-0 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+              <div className="p-6 pt-0 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
                 <div className="flex items-center gap-1.5">
-                  <Calendar className="w-3.5 h-3.5 text-cyan-400" />
+                  <Calendar className="w-3.5 h-3.5 text-red-600" />
                   <span>{post.publishedAt}</span>
                 </div>
 
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="inline-flex items-center gap-1 font-bold text-purple-400 hover:text-purple-300 transition-colors"
+                  className="inline-flex items-center gap-1 font-bold text-red-600 hover:text-red-700 transition-colors"
                 >
                   <span>Lire la suite</span>
                   <ArrowRight className="w-3.5 h-3.5" />

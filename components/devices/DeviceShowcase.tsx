@@ -54,18 +54,18 @@ export function DeviceShowcase() {
   ];
 
   return (
-    <section className="relative py-20 bg-[#050507]" id="compatibilite">
+    <section className="relative py-20 bg-slate-50" id="compatibilite">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 bg-cyan-950/60 px-3.5 py-1.5 rounded-full border border-cyan-500/30">
+          <span className="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-4 py-1.5 rounded-full border border-red-200 shadow-sm">
             COMPATIBILITÉ TOTALE
           </span>
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
-            Votre écran. <span className="text-gradient-blue">Votre choix.</span>
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-slate-900">
+            Votre écran. <span className="text-gradient-red">Votre choix.</span>
           </h2>
-          <p className="text-gray-400 text-base sm:text-lg">
-            STREAMORA s'adapte à vos appareils d'aujourd'hui et de demain sans contrainte matérielle.
+          <p className="text-slate-600 text-base sm:text-lg font-medium">
+            STRONG4K s'adapte à vos appareils d'aujourd'hui et de demain sans contrainte matérielle.
           </p>
         </div>
 
@@ -76,35 +76,35 @@ export function DeviceShowcase() {
             return (
               <div
                 key={device.id}
-                className="glass-card p-6 rounded-2xl border border-white/10 glass-card-hover flex flex-col justify-between space-y-5"
+                className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 hover:border-red-500/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-5"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <div className="w-12 h-12 rounded-xl bg-purple-950/60 border border-purple-500/30 flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-purple-300" />
+                    <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
+                      <Icon className="w-6 h-6 text-red-600" />
                     </div>
-                    <span className="text-[11px] font-semibold text-gray-300 bg-white/5 px-2.5 py-1 rounded-full border border-white/10">
+                    <span className="text-[11px] font-bold text-slate-700 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
                       {device.badge}
                     </span>
                   </div>
 
                   <div className="space-y-1">
-                    <h3 className="text-xl font-bold text-white">{device.name}</h3>
-                    <p className="text-xs text-gray-400 leading-relaxed">
+                    <h3 className="text-xl font-bold text-slate-900">{device.name}</h3>
+                    <p className="text-xs text-slate-600 font-medium leading-relaxed">
                       {device.description}
                     </p>
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-white/5 flex items-center justify-between">
-                  <div className="flex items-center gap-1.5 text-xs text-emerald-400">
+                <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-red-600">
                     <Check className="w-3.5 h-3.5" />
                     <span>Prise en charge certifiée</span>
                   </div>
 
                   <Link
                     href={device.href}
-                    className="inline-flex items-center gap-1 text-xs font-bold text-purple-400 hover:text-purple-300 transition-colors"
+                    className="inline-flex items-center gap-1 text-xs font-bold text-red-600 hover:text-red-700 transition-colors"
                   >
                     <span>Voir le guide</span>
                     <ArrowRight className="w-3.5 h-3.5" />

@@ -25,7 +25,7 @@ export const products: ProductPlan[] = [
     priceValue: 14.99,
     currency: "€",
     monthlyEquivalent: "14,99 € / mois",
-    description: "Idéal pour tester l'expérience STREAMORA en toute liberté sans engagement.",
+    description: "Idéal pour tester l'expérience STRONG4K en toute liberté sans engagement.",
     featured: false,
     ctaText: "Découvrir l'offre",
     features: [

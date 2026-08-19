@@ -18,7 +18,7 @@ export function PricingSelector({ products }: PricingSelectorProps) {
     <div className="space-y-10">
       {/* Interactive Selector Tabs */}
       <div className="flex items-center justify-center">
-        <div className="glass-card p-1.5 rounded-2xl border border-white/10 flex items-center gap-1">
+        <div className="bg-slate-100 p-1.5 rounded-2xl border border-slate-200 shadow-inner flex items-center gap-1">
           {products.map((plan) => {
             const isSelected = plan.id === selectedPlanId;
             return (
@@ -27,14 +27,14 @@ export function PricingSelector({ products }: PricingSelectorProps) {
                 onClick={() => setSelectedPlanId(plan.id)}
                 className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 relative ${
                   isSelected
-                    ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg shadow-purple-600/30"
-                    : "text-gray-400 hover:text-white hover:bg-white/5"
+                    ? "bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-md shadow-red-600/30"
+                    : "text-slate-600 hover:text-slate-900 hover:bg-slate-200/60"
                 }`}
               >
                 {plan.duration}
                 {plan.featured && (
-                  <span className="ml-1.5 text-[10px] bg-amber-400 text-black px-1.5 py-0.2 rounded-full font-extrabold">
-                    TOP
+                  <span className="ml-1.5 text-[10px] bg-red-600 text-white px-2 py-0.5 rounded-full font-extrabold uppercase">
+                    RECOMMANDÉ
                   </span>
                 )}
               </button>
@@ -56,13 +56,13 @@ export function PricingSelector({ products }: PricingSelectorProps) {
               onClick={() => setSelectedPlanId(plan.id)}
               className={`rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between relative cursor-pointer ${
                 isFeatured
-                  ? "bg-gradient-to-b from-[#191428] via-[#11131a] to-[#0d0e15] border-2 border-purple-500 shadow-2xl shadow-purple-950/60 lg:-translate-y-2"
-                  : "glass-card border border-white/10 hover:border-white/20"
-              } ${isSelected ? "ring-2 ring-purple-400" : ""}`}
+                  ? "bg-gradient-to-b from-red-50/70 via-white to-white text-slate-900 border-2 border-red-600 shadow-2xl shadow-red-500/10 lg:-translate-y-2"
+                  : "bg-white text-slate-900 border border-slate-200 hover:border-slate-300 shadow-lg shadow-slate-200/50"
+              } ${isSelected ? "ring-2 ring-red-500" : ""}`}
             >
               {/* Featured Badge */}
               {isFeatured && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-amber-500 text-white font-extrabold text-[11px] uppercase tracking-wider px-4 py-1 rounded-full shadow-lg flex items-center gap-1.5">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-red-600 to-rose-600 text-white font-black text-[11px] uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5 fill-white" />
                   <span>{plan.badge || "LE PLUS POPULAIRE"}</span>
                 </div>
@@ -70,43 +70,43 @@ export function PricingSelector({ products }: PricingSelectorProps) {
 
               <div className="space-y-6">
                 {/* Header */}
-                <div className="space-y-2 border-b border-white/10 pb-6">
+                <div className="space-y-2 border-b border-slate-100 pb-6">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-widest text-purple-400">
+                    <span className="text-xs font-black uppercase tracking-widest text-red-600">
                       {plan.duration}
                     </span>
                     {plan.popularDiscountBadge && (
-                      <span className="text-[10px] font-extrabold text-emerald-400 bg-emerald-950/60 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
+                      <span className="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full text-red-700 bg-red-50 border border-red-200">
                         {plan.popularDiscountBadge}
                       </span>
                     )}
                   </div>
-                  <h3 className="text-2xl font-extrabold text-white">{plan.name}</h3>
-                  <p className="text-xs text-gray-400 leading-relaxed">{plan.description}</p>
+                  <h3 className="text-2xl font-black text-slate-900">{plan.name}</h3>
+                  <p className="text-xs leading-relaxed font-medium text-slate-500">{plan.description}</p>
                 </div>
 
                 {/* Price Display */}
                 <div className="space-y-1">
                   <div className="flex items-baseline gap-1">
-                    <span className="text-4xl sm:text-5xl font-black text-white tracking-tight">
+                    <span className="text-4xl sm:text-5xl font-black tracking-tight text-slate-900">
                       {plan.priceFormatted}
                     </span>
-                    <span className="text-sm font-semibold text-gray-400">/ pass</span>
+                    <span className="text-sm font-semibold text-slate-400">/ pass</span>
                   </div>
-                  <p className="text-xs text-purple-300 font-medium">
+                  <p className="text-xs font-bold text-red-600">
                     Équivalent : {plan.monthlyEquivalent}
                   </p>
                 </div>
 
                 {/* Features List */}
                 <div className="space-y-3 pt-2">
-                  <p className="text-xs font-bold uppercase tracking-wider text-gray-400">
+                  <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
                     Ce qui est inclus :
                   </p>
-                  <ul className="space-y-2.5 text-xs text-gray-300">
+                  <ul className="space-y-2.5 text-xs font-semibold text-slate-700">
                     {plan.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2.5">
-                        <Check className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+                        <Check className="w-4 h-4 shrink-0 mt-0.5 text-red-600" />
                         <span className="leading-tight">{feature}</span>
                       </li>
                     ))}
@@ -120,17 +120,13 @@ export function PricingSelector({ products }: PricingSelectorProps) {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-full inline-flex items-center justify-center gap-2.5 py-4 rounded-xl font-bold text-sm transition-all duration-300 shadow-lg ${
-                    isFeatured
-                      ? "bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-500 hover:from-emerald-500 hover:to-teal-400 text-white shadow-emerald-600/30 hover:scale-[1.02]"
-                      : "bg-emerald-950/60 hover:bg-emerald-900/80 text-emerald-300 border border-emerald-500/30"
-                  }`}
+                  className="w-full inline-flex items-center justify-center gap-2.5 py-4 rounded-xl font-extrabold text-sm transition-all duration-300 shadow-md bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-700 hover:to-rose-700 text-white shadow-red-600/30 hover:scale-[1.02]"
                 >
                   <span>Découvrir l'offre</span>
                 </a>
 
-                <div className="mt-3 flex items-center justify-center gap-1.5 text-[11px] text-gray-400">
-                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                <div className="mt-3 flex items-center justify-center gap-1.5 text-[11px] font-semibold text-slate-500">
+                  <ShieldCheck className="w-3.5 h-3.5 text-red-600" />
                   <span>Commande directe • Réponse rapide 7j/7</span>
                 </div>
               </div>

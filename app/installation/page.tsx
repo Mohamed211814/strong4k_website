@@ -5,9 +5,9 @@ import Link from "next/link";
 import { Tv, Flame, Smartphone, Monitor, ArrowRight, BookOpen, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Guides d'Installation IPTV - Tutoriels Configuration Appareils",
+  title: "Guides d'Installation 4K - Tutoriels Configuration Appareils",
   description:
-    "Consultez nos tutoriels d'installation pas à pas pour configurer STREAMORA sur Smart TV, Fire TV, Android TV, iPhone et ordinateur PC/Mac.",
+    "Consultez nos tutoriels d'installation pas à pas pour configurer STRONG4K sur Smart TV, Fire TV, Android TV, iPhone et ordinateur PC/Mac.",
   alternates: {
     canonical: `${siteConfig.domain}/installation`,
   },
@@ -58,21 +58,21 @@ export default function InstallationIndexPage() {
   ];
 
   return (
-    <div className="pt-28 pb-16 space-y-16">
+    <div className="pt-28 pb-16 space-y-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <Breadcrumbs items={[{ name: "Installation", url: "/installation" }]} />
 
         <div className="py-12 text-center max-w-4xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-950/60 border border-purple-500/30 text-purple-300 text-xs font-semibold uppercase tracking-wider">
-            <BookOpen className="w-3.5 h-3.5 text-purple-400" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider shadow-sm">
+            <BookOpen className="w-3.5 h-3.5 text-red-600" />
             <span>CENTRE DE CONFIGURATION</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-            Besoin d'aide pour l'installation ?
+          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
+            Besoin d'aide pour l'installation <span className="text-gradient-red">4K</span> ?
           </h1>
 
-          <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
             Sélectionnez votre appareil ci-dessous pour suivre notre guide de configuration illustré et profiter rapidement de votre service.
           </p>
         </div>
@@ -83,27 +83,27 @@ export default function InstallationIndexPage() {
             return (
               <div
                 key={g.slug}
-                className="glass-card p-6 rounded-2xl border border-white/10 space-y-4 flex flex-col justify-between glass-card-hover"
+                className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 hover:border-red-500/40 hover:shadow-xl transition-all duration-300 space-y-4 flex flex-col justify-between"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <div className="w-12 h-12 rounded-xl bg-purple-950/60 border border-purple-500/30 flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-purple-400" />
+                    <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
+                      <Icon className="w-6 h-6 text-red-600" />
                     </div>
-                    <span className="text-[11px] font-mono text-cyan-400 bg-cyan-950/60 px-2.5 py-1 rounded-full border border-cyan-500/30">
+                    <span className="text-[11px] font-bold text-red-700 bg-red-50 px-3 py-1 rounded-full border border-red-200">
                       ~ {g.duration}
                     </span>
                   </div>
 
                   <div className="space-y-1">
-                    <h3 className="text-xl font-bold text-white">{g.title}</h3>
-                    <p className="text-xs text-gray-400 leading-relaxed">{g.desc}</p>
+                    <h3 className="text-xl font-bold text-slate-900">{g.title}</h3>
+                    <p className="text-xs text-slate-600 font-medium leading-relaxed">{g.desc}</p>
                   </div>
                 </div>
 
                 <Link
                   href={g.href}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-purple-600/30 hover:bg-purple-600/50 text-white font-bold text-xs border border-purple-500/40 transition-colors"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shadow-md shadow-red-600/20 transition-all duration-300"
                 >
                   <span>Consulter le tutoriel</span>
                   <ArrowRight className="w-4 h-4" />

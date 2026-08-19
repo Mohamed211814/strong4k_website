@@ -3,8 +3,8 @@ import { siteConfig } from "@/lib/config/site";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Mentions Légales | STREAMORA",
-  description: "Mentions légales et informations d'éditeur du site STREAMORA.",
+  title: "Mentions Légales | STRONG4K",
+  description: "Mentions légales et informations d'éditeur du site STRONG4K.",
   alternates: {
     canonical: `${siteConfig.domain}/mentions-legales`,
   },
@@ -12,20 +12,20 @@ export const metadata: Metadata = {
 
 export default function MentionsLegalesPage() {
   return (
-    <div className="pt-28 pb-16 space-y-12">
+    <div className="pt-28 pb-16 space-y-12 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <Breadcrumbs items={[{ name: "Mentions Légales", url: "/mentions-legales" }]} />
 
         <div className="py-6 space-y-4">
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-white">Mentions Légales</h1>
-          <p className="text-xs text-purple-300 uppercase tracking-widest font-mono">
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-900">Mentions Légales</h1>
+          <p className="text-xs text-red-600 uppercase tracking-widest font-mono font-bold">
             Dernière mise à jour : Février 2026
           </p>
         </div>
 
-        <div className="glass-card p-8 rounded-3xl border border-white/10 space-y-6 text-sm text-gray-300 leading-relaxed">
+        <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6 text-sm text-slate-700 font-medium leading-relaxed">
           <section className="space-y-2">
-            <h2 className="text-lg font-bold text-white">1. Éditeur du site</h2>
+            <h2 className="text-lg font-bold text-slate-900">1. Éditeur du site</h2>
             <p>
               Le site Internet <strong>{siteConfig.brandName}</strong> est édité par la société :
             </p>
@@ -41,7 +41,7 @@ export default function MentionsLegalesPage() {
           </section>
 
           <section className="space-y-2">
-            <h2 className="text-lg font-bold text-white">2. Hébergement du site</h2>
+            <h2 className="text-lg font-bold text-slate-900">2. Hébergement du site</h2>
             <p>
               Le site est hébergé par la plateforme d'infrastructures cloud :
             </p>
@@ -49,7 +49,7 @@ export default function MentionsLegalesPage() {
           </section>
 
           <section className="space-y-2">
-            <h2 className="text-lg font-bold text-white">3. Propriété Intellectuelle & Droits</h2>
+            <h2 className="text-lg font-bold text-slate-900">3. Propriété Intellectuelle & Droits</h2>
             <p>
               {siteConfig.brandName} respecte scrupuleusement la réglementation relative à la propriété intellectuelle. Le service ne promeut et ne distribue que des flux et chaînes pour lesquels la société détient les droits de diffusion ou mandats nécessaires.
             </p>

@@ -6,8 +6,8 @@ import { Suspense } from "react";
 import { Loader2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Commande & Checkout Sécurisé | STREAMORA",
-  description: "Finalisez votre souscription STREAMORA en toute sécurité.",
+  title: "Commande & Checkout Sécurisé | STRONG4K",
+  description: "Finalisez votre souscription STRONG4K en toute sécurité.",
   robots: {
     index: false,
     follow: false,

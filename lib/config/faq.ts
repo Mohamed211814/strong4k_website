@@ -14,11 +14,11 @@ export const faqItems: FaqItem[] = [
       "Un service TV sur Internet (IPTV) vous permet de recevoir des flux de télévision en direct et à la demande directement via votre connexion réseau (Fibre, ADSL, 4G/5G) sur vos équipements multimédias compatibles, sans nécessiter d'antenne râteau ni de parabole satellite.",
   },
   {
-    id: "faq-2",
+    id: "appareils-compatibles",
     category: "Compatibilité",
-    question: "Sur quels appareils puis-je utiliser le service STREAMORA ?",
+    question: "Sur quels appareils puis-je utiliser le service STRONG4K ?",
     answer:
-      "STREAMORA est compatible avec une très grande variété d'appareils : Smart TV (Samsung, LG, Philips, Sony), boîtiers & clés de streaming (Android TV, Amazon Fire TV Stick, Apple TV), smartphones et tablettes (iOS et Android), ainsi que les ordinateurs PC et Mac via des lecteurs multimédias standard.",
+      "STRONG4K est compatible avec une très grande variété d'appareils : Smart TV (Samsung, LG, Philips, Sony), boîtiers & clés de streaming (Android TV, Amazon Fire TV Stick, Apple TV), smartphones et tablettes (iOS et Android), ainsi que les ordinateurs PC et Mac via des lecteurs multimédias standard.",
   },
   {
     id: "faq-3",
