@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog & Guides Streaming TV - Actualités & Tutoriels",
+  title: "Blog & Guides Streaming TV | Actualités & Tutoriels",
   description:
     "Découvrez nos articles, conseils d'experts et tutoriels pour optimiser votre expérience TV sur Smart TV, Fire TV et Android TV.",
   alternates: {

@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 import { Mail, Clock, Headphones, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Nous Contacter - Support Client STRONG4K",
+  title: "Nous Contacter | Support Client STRONG4K",
   description:
     "Un doute ou une question sur la configuration ? Contactez notre équipe d'assistance client réactive 7j/7.",
   alternates: {
@@ -20,11 +20,11 @@ export default function ContactPage() {
         <Breadcrumbs items={[{ name: "Contact", url: "/contact" }]} />
 
         <div className="py-6 text-center max-w-3xl mx-auto space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-4 py-1.5 rounded-full border border-red-200 shadow-sm">
+          <span className="text-xs font-bold uppercase tracking-widest text-rose-800 bg-rose-50 px-4 py-1.5 rounded-full border border-rose-200 shadow-sm">
             ASSISTANCE À VOTRE ÉCOUTE
           </span>
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
-            Nous Contacter <span className="text-gradient-red">STRONG4K</span>
+            Nous Contacter
           </h1>
           <p className="text-slate-600 text-base sm:text-lg max-w-xl mx-auto leading-relaxed font-medium">
             Notre équipe française de support est à votre disposition 7j/7 pour vous assister et répondre à toutes vos interrogations.
@@ -36,28 +36,28 @@ export default function ContactPage() {
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-200/50 space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-                  <Mail className="w-5 h-5 text-red-600" />
+                <div className="w-10 h-10 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-rose-700" />
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-slate-900">E-mail de support</h4>
-                  <p className="text-xs text-red-600 font-mono font-bold">{siteConfig.supportEmail}</p>
+                  <p className="text-xs text-rose-700 font-mono font-bold">{siteConfig.supportEmail}</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-3 border-t border-slate-100 pt-4">
-                <div className="w-10 h-10 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-                  <Clock className="w-5 h-5 text-red-600" />
+                <div className="w-10 h-10 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+                  <Clock className="w-5 h-5 text-rose-700" />
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-slate-900">Horaires de réponse</h4>
-                  <p className="text-xs text-slate-500 font-medium">7 jours sur 7 — 09h00 à 23h00</p>
+                  <p className="text-xs text-slate-500 font-medium">7 jours sur 7 (09h00 à 23h00)</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-3 border-t border-slate-100 pt-4">
-                <div className="w-10 h-10 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center">
-                  <Headphones className="w-5 h-5 text-red-600" />
+                <div className="w-10 h-10 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+                  <Headphones className="w-5 h-5 text-rose-700" />
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-slate-900">Accompagnement personnalisé</h4>

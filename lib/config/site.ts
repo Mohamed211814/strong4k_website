@@ -5,7 +5,7 @@ export const siteConfig = {
     "Découvrez l'expérience IPTV 4K Ultra HD ultime sur tous vos appareils compatibles en France. Des abonnements simples, transparents et sans engagement avec une activation instantanée.",
   domain: process.env.NEXT_PUBLIC_SITE_URL || "https://strong4k-tv.fr",
   language: "fr-FR",
-  supportEmail: "contact@strong4k-tv.fr",
+  supportEmail: "zprotv25@gmail.com",
   supportPhone: "+33 7 56 90 12 34",
   whatsAppNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+212779395271",
   company: {

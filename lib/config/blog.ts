@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "comment-installer-iptv-smart-tv",
     title: "Comment installer et configurer votre service TV sur Smart TV",
-    excerpt: "Guide pas-à-pas pour configurer facilement votre abonnement TV sur Smart TV Samsung, LG ou Android TV.",
+    excerpt: "Guide pas à pas pour configurer facilement votre abonnement TV sur Smart TV Samsung, LG ou Android TV.",
     category: "Guides d'Installation",
     readTime: "5 min de lecture",
     publishedAt: "2026-02-10",
@@ -105,7 +105,7 @@ export const blogPosts: BlogPost[] = [
 
       <h3>Quels sont les avantages de la TV sur Internet ?</h3>
       <ul>
-        <li><strong>Multi-appareils :</strong> Visionnez vos programmes sur Smart TV, ordinateur, tablette ou smartphone.</li>
+        <li><strong>Multi appareils :</strong> Visionnez vos programmes sur Smart TV, ordinateur, tablette ou smartphone.</li>
         <li><strong>Installation sans travaux :</strong> Aucune parabole ni câble coaxial requis. Une simple connexion Internet suffit.</li>
         <li><strong>Mobilité :</strong> Emportez votre abonnement en déplacement ou en vacances sur votre smartphone ou ordinateur.</li>
       </ul>

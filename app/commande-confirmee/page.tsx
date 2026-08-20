@@ -5,7 +5,7 @@ import { CheckCircle2, Mail, Tv, ArrowRight, ShieldCheck } from "lucide-react";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "Commande Confirmée - Merci | STRONG4K",
+  title: "Commande Confirmée | Merci | STRONG4K",
   description: "Confirmation de votre souscription à STRONG4K.",
   robots: {
     index: false,

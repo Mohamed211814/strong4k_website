@@ -85,7 +85,7 @@ export function ChatBot() {
     {
       id: "welcome-2",
       sender: "bot",
-      text: "Comment puis-je vous aider aujourd'hui ? Posez votre question ci-dessous ou cliquez sur l'une des options rapides.",
+      text: "Comment puis-je vous aider aujourd'hui ? Posez votre question ci dessous ou cliquez sur l'une des options rapides.",
       timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
       showWhatsAppButton: false,
     },
@@ -143,12 +143,12 @@ export function ChatBot() {
         shouldShowWA = false;
       } else if (lower.includes("commander") || lower.includes("acheter") || lower.includes("payer") || lower.includes("whatsapp") || lower.includes("support") || lower.includes("contact") || lower.includes("conseiller")) {
         botResponseText =
-          "Vous souhaitez échanger directement avec notre équipe ou valider votre commande ? Cliquez sur le bouton ci-dessous pour ouvrir la discussion WhatsApp :";
+          "Vous souhaitez échanger directement avec notre équipe ou valider votre commande ? Cliquez sur le bouton ci dessous pour ouvrir la discussion WhatsApp :";
         shouldShowWA = true;
       } else {
         // Fallback if the bot doesn't know the exact answer: provide WhatsApp button!
         botResponseText =
-          "Je n'ai pas la réponse exacte à votre question spécifique. Cliquez ci-dessous pour discuter directement avec notre conseiller sur WhatsApp !";
+          "Je n'ai pas la réponse exacte à votre question spécifique. Cliquez ci dessous pour discuter directement avec notre conseiller sur WhatsApp !";
         shouldShowWA = true;
       }
 

@@ -6,7 +6,7 @@ import { FaqSection } from "@/components/faq/FaqSection";
 import { FinalCta } from "@/components/cta/FinalCta";
 
 export const metadata: Metadata = {
-  title: "Nos Offres & Tarifs - Formules STRONG4K",
+  title: "Nos Offres & Tarifs | Formules STRONG4K",
   description:
     "Consultez l'ensemble de nos formules d'abonnement : Pass 1 mois, 6 mois et 12 mois. Tarifs transparents, sans engagement et activation instantanée.",
   alternates: {

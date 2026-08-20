@@ -59,7 +59,7 @@ export function EditorialFeatures() {
           {/* Text Right (col-span-5) */}
           <div className="lg:col-span-5 space-y-6">
             <span className="text-xs font-black uppercase tracking-widest text-rose-700">
-              01 — ERGONOMIE SOIGNÉE
+              01 ERGONOMIE SOIGNÉE
             </span>
             <h3 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
               Une expérience pensée pour vous
@@ -78,7 +78,7 @@ export function EditorialFeatures() {
               </li>
               <li className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-rose-700 shrink-0" />
-                <span>Compatibilité multi-écrans selon l'offre choisie</span>
+                <span>Compatibilité multi écrans selon l'offre choisie</span>
               </li>
             </ul>
           </div>
@@ -89,7 +89,7 @@ export function EditorialFeatures() {
           {/* Text Left (col-span-5) */}
           <div className="lg:col-span-5 space-y-6 order-2 lg:order-1">
             <span className="text-xs font-black uppercase tracking-widest text-rose-700">
-              02 — ECOSYSTÈME FLUIDE
+              02 ECOSYSTÈME FLUIDE
             </span>
             <h3 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
               Vos appareils préférés
@@ -143,7 +143,7 @@ export function EditorialFeatures() {
         <div className="bg-rose-50/60 rounded-3xl p-8 sm:p-12 text-center max-w-4xl mx-auto space-y-8 relative overflow-hidden border-2 border-rose-200 shadow-xl text-slate-900">
           <div className="space-y-4 relative z-10">
             <span className="text-xs font-black uppercase tracking-widest text-rose-700">
-              03 — MISE EN ROUTE RAPIDE
+              03 MISE EN ROUTE RAPIDE
             </span>
             <h3 className="text-3xl sm:text-4xl font-black text-slate-900">
               Une activation simple et guidée

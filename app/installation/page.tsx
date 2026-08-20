@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Tv, Flame, Smartphone, Monitor, ArrowRight, BookOpen, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Guides d'Installation 4K - Tutoriels Configuration Appareils",
+  title: "Guides d'Installation 4K | Tutoriels Configuration Appareils",
   description:
     "Consultez nos tutoriels d'installation pas à pas pour configurer STRONG4K sur Smart TV, Fire TV, Android TV, iPhone et ordinateur PC/Mac.",
   alternates: {
@@ -29,13 +29,13 @@ export default function InstallationIndexPage() {
       href: "/installation/android-tv",
       desc: "Configuration pas à pas pour boîtiers Shield, Xiaomi Box et téléviseurs sous Android TV.",
       icon: Tv,
-      duration: "4 minutes",
+      duration: "2 minutes",
     },
     {
       title: "Guide Amazon Fire TV Stick",
       slug: "fire-tv",
       href: "/installation/fire-tv",
-      desc: "Tutoriel illustré pour clés Fire TV Stick Lite, HD, 4K et 4K Max.",
+      desc: "Procédure d'installation guidée pour clé Amazon Fire Stick HD et 4K.",
       icon: Flame,
       duration: "3 minutes",
     },
@@ -43,37 +43,37 @@ export default function InstallationIndexPage() {
       title: "Guide Smartphones & Tablettes",
       slug: "mobile",
       href: "/installation/mobile",
-      desc: "Instructions pour appareils iOS (iPhone, iPad) et mobiles Android.",
+      desc: "Tutoriel de configuration sur appareils iOS (iPhone/iPad) et smartphones Android.",
       icon: Smartphone,
       duration: "2 minutes",
     },
     {
-      title: "Guide PC Windows & Mac",
+      title: "Guide Ordinateur (PC & Mac)",
       slug: "ordinateur",
       href: "/installation/ordinateur",
-      desc: "Paramétrage via lecteurs vidéo standard tels que VLC ou IPTV Smarters.",
+      desc: "Utilisation du service sur ordinateur de bureau et portable via lecteurs multimédias.",
       icon: Monitor,
-      duration: "3 minutes",
+      duration: "2 minutes",
     },
   ];
 
   return (
     <div className="pt-28 pb-16 space-y-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
         <Breadcrumbs items={[{ name: "Installation", url: "/installation" }]} />
 
         <div className="py-12 text-center max-w-4xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider shadow-sm">
-            <BookOpen className="w-3.5 h-3.5 text-red-600" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-50 border border-rose-200 text-rose-800 text-xs font-bold uppercase tracking-wider shadow-sm">
+            <BookOpen className="w-3.5 h-3.5 text-rose-700" />
             <span>CENTRE DE CONFIGURATION</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
-            Besoin d'aide pour l'installation <span className="text-gradient-red">4K</span> ?
+            Besoin d'aide pour l'installation 4K ?
           </h1>
 
           <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-            Sélectionnez votre appareil ci-dessous pour suivre notre guide de configuration illustré et profiter rapidement de votre service.
+            Sélectionnez votre appareil ci dessous pour suivre notre guide de configuration illustré et profiter rapidement de votre service.
           </p>
         </div>
 
