@@ -55,10 +55,21 @@ export default function PanelPage() {
             <div className="bg-white p-8 rounded-3xl border-2 border-slate-200 shadow-xl shadow-slate-200/50 flex flex-col justify-between space-y-6 hover:border-rose-500 transition-all">
               <div className="space-y-6">
                 <div className="border-b border-slate-100 pb-6 space-y-2">
-                  <span className="text-xs font-black uppercase tracking-widest text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
-                    PACK STARTER
-                  </span>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black uppercase tracking-widest text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
+                      PACK STARTER
+                    </span>
+                  </div>
                   <h3 className="text-3xl font-black text-slate-900 pt-2">Pack 120 Crédits</h3>
+                  
+                  {/* Price Display */}
+                  <div className="py-2">
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-4xl font-black text-slate-900">120 $</span>
+                      <span className="text-xs font-semibold text-slate-400">/ 120 crédits</span>
+                    </div>
+                  </div>
+
                   <div className="text-sm font-bold text-rose-700 bg-rose-50/60 p-3 rounded-xl border border-rose-200/60">
                     💡 10 Crédits = 1 An (Permet de créer 12 abonnements de 1 an)
                   </div>
@@ -120,10 +131,25 @@ export default function PanelPage() {
 
               <div className="space-y-6">
                 <div className="border-b border-slate-100 pb-6 space-y-2">
-                  <span className="text-xs font-black uppercase tracking-widest text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
-                    PACK PRO REVENDEUR
-                  </span>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black uppercase tracking-widest text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
+                      PACK PRO REVENDEUR
+                    </span>
+                    <span className="text-xs font-extrabold text-rose-900 bg-rose-50 px-2.5 py-1 rounded-full border border-rose-200">
+                      ÉCONOMISEZ 10%
+                    </span>
+                  </div>
                   <h3 className="text-3xl font-black text-slate-900 pt-2">Pack 240 Crédits</h3>
+                  
+                  {/* Price Display */}
+                  <div className="py-2">
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-4xl font-black text-slate-900">216 $</span>
+                      <span className="text-sm font-bold line-through text-slate-400">240 $</span>
+                      <span className="text-xs font-semibold text-slate-400">/ 240 crédits</span>
+                    </div>
+                  </div>
+
                   <div className="text-sm font-bold text-rose-700 bg-rose-50/60 p-3 rounded-xl border border-rose-200/60">
                     💡 10 Crédits = 1 An (Permet de créer 24 abonnements de 1 an)
                   </div>
