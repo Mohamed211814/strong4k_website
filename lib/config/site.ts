@@ -11,11 +11,11 @@ export const siteConfig = {
   company: {
     name: "STRONG4K MEDIA SAS",
     address: "128 Rue La Boétie, 75008 Paris, France",
-    registration: "RCS Paris B 918 273 645 - SIRET 91827364500012",
+    registration: "RCS Paris B 918 273 645 | SIRET 91827364500012",
     vatNumber: "FR 82 918273645",
     capital: "10 000 €",
     publicationDirector: "Direction STRONG4K",
-    host: "Vercel Inc. - 440 N Barranca Ave #4133, Covina, CA 91723, USA",
+    host: "Vercel Inc. | 440 N Barranca Ave #4133, Covina, CA 91723, USA",
   },
   navLinks: [
     { label: "Abonnements", href: "/#abonnements" },

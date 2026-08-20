@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import { siteConfig, getWhatsAppUrl } from "@/lib/config/site";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FinalCta } from "@/components/cta/FinalCta";
-import { ShieldCheck, Zap, Layers, Sparkles, UserCheck, MessageCircle, Server, CreditCard, Users, CheckCircle2, Clock, HelpCircle } from "lucide-react";
+import { ShieldCheck, Zap, Layers, Sparkles, UserCheck, MessageCircle, Server, CreditCard, Users, CheckCircle2, Clock, HelpCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Panel Reseller IPTV 4K | Gestion & Revente | STRONG4K",
   description:
-    "Découvrez le Panel Reseller STRONG4K. Créez et gérez vos abonnements IPTV 4K en toute autonomie avec une activation instantanée et un support 24/7.",
+    "Découvrez les Packs Reseller STRONG4K. Pack 120 Crédits et Pack 240 Crédits (10 Crédits = 1 An d'abonnement) avec gestion autonome et support 24/7.",
   alternates: {
     canonical: `${siteConfig.domain}/panel`,
   },
@@ -15,6 +15,8 @@ export const metadata: Metadata = {
 
 export default function PanelPage() {
   const panelWhatsappUrl = getWhatsAppUrl("Accès Panel Reseller");
+  const pack120WhatsappUrl = getWhatsAppUrl("Pack Reseller 120 Crédits");
+  const pack240WhatsappUrl = getWhatsAppUrl("Pack Reseller 240 Crédits");
 
   return (
     <div className="pt-28 pb-16 space-y-16 bg-white">
@@ -36,17 +38,143 @@ export default function PanelPage() {
           <p className="text-slate-600 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed font-medium">
             Rejoignez notre réseau officiel de revendeurs partenaires. Profitez d'une plateforme d'administration puissante, d'une création de ligne en temps réel et de crédits rechargeables sans date d'expiration.
           </p>
+        </div>
 
-          <div className="pt-4 flex items-center justify-center">
-            <a
-              href={panelWhatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-extrabold text-base shadow-xl shadow-rose-700/25 transition-all hover:scale-105"
-            >
-              <MessageCircle className="w-5 h-5 fill-white text-emerald-600" />
-              <span>Demander mon accès Panel via WhatsApp</span>
-            </a>
+        {/* Reseller Packs Section */}
+        <div className="space-y-8">
+          <div className="text-center max-w-2xl mx-auto space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-rose-700">TARIFS REVENDEURS</span>
+            <h2 className="text-3xl sm:text-4xl font-black text-slate-900">Nos Packs de Crédits Reseller</h2>
+            <p className="text-sm text-slate-600 font-medium">
+              Formules claires et transparentes : <strong className="text-rose-700 font-bold">10 Crédits = 1 An d'abonnement</strong>
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+            {/* Pack 1: 120 Credits */}
+            <div className="bg-white p-8 rounded-3xl border-2 border-slate-200 shadow-xl shadow-slate-200/50 flex flex-col justify-between space-y-6 hover:border-rose-500 transition-all">
+              <div className="space-y-6">
+                <div className="border-b border-slate-100 pb-6 space-y-2">
+                  <span className="text-xs font-black uppercase tracking-widest text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
+                    PACK STARTER
+                  </span>
+                  <h3 className="text-3xl font-black text-slate-900 pt-2">Pack 120 Crédits</h3>
+                  <div className="text-sm font-bold text-rose-700 bg-rose-50/60 p-3 rounded-xl border border-rose-200/60">
+                    💡 10 Crédits = 1 An (Permet de créer 12 abonnements de 1 an)
+                  </div>
+                </div>
+
+                <ul className="space-y-3 text-xs font-semibold text-slate-700">
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span><strong>120 Crédits Reseller</strong> rechargeables</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Équivalence : 10 Crédits = 1 An d'abonnement</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Permet de créer <strong>12 abonnements de 1 an</strong></span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Génération de <strong>tests gratuits 24h illimités</strong></span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Création M3U, Xtream API et adresse MAC (MAG)</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Gestion des sous revendeurs (Sub Resellers)</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Crédits sans date d'expiration</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Assistance technique prioritaire 7j/7</span>
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href={pack120WhatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2.5 py-4 rounded-xl font-extrabold text-sm transition-all duration-300 bg-rose-700 hover:bg-rose-800 text-white shadow-md shadow-rose-700/25 hover:scale-[1.02]"
+              >
+                <MessageCircle className="w-4 h-4 fill-white text-emerald-600" />
+                <span>Commander Pack 120 Crédits</span>
+              </a>
+            </div>
+
+            {/* Pack 2: 240 Credits (Featured) */}
+            <div className="bg-white p-8 rounded-3xl border-2 border-rose-700 shadow-2xl shadow-rose-700/15 flex flex-col justify-between space-y-6 relative">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-rose-700 text-white font-black text-[11px] uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 fill-white" />
+                <span>MEILLEUR RAPPORT QUALITÉ / PRIX</span>
+              </div>
+
+              <div className="space-y-6">
+                <div className="border-b border-slate-100 pb-6 space-y-2">
+                  <span className="text-xs font-black uppercase tracking-widest text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
+                    PACK PRO REVENDEUR
+                  </span>
+                  <h3 className="text-3xl font-black text-slate-900 pt-2">Pack 240 Crédits</h3>
+                  <div className="text-sm font-bold text-rose-700 bg-rose-50/60 p-3 rounded-xl border border-rose-200/60">
+                    💡 10 Crédits = 1 An (Permet de créer 24 abonnements de 1 an)
+                  </div>
+                </div>
+
+                <ul className="space-y-3 text-xs font-semibold text-slate-700">
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span><strong>240 Crédits Reseller</strong> rechargeables</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Équivalence : 10 Crédits = 1 An d'abonnement</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Permet de créer <strong>24 abonnements de 1 an</strong></span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Génération de <strong>tests gratuits 24h illimités</strong></span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Création M3U, Xtream API et adresse MAC (MAG)</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Gestion complète des Sub Resellers avec commissions</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Crédits sans date d'expiration</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-rose-700 shrink-0" />
+                    <span>Assistance VIP prioritaire 24/7 dédiée</span>
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href={pack240WhatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2.5 py-4 rounded-xl font-extrabold text-sm transition-all duration-300 bg-rose-700 hover:bg-rose-800 text-white shadow-md shadow-rose-700/25 hover:scale-[1.02]"
+              >
+                <MessageCircle className="w-4 h-4 fill-white text-emerald-600" />
+                <span>Commander Pack 240 Crédits</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -107,10 +235,10 @@ export default function PanelPage() {
 
             <div className="bg-white p-6 rounded-2xl border border-slate-200 space-y-2">
               <h4 className="text-base font-bold text-slate-900 flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-rose-700" /> Sous Revendeurs (Sub-Resellers)
+                <CheckCircle2 className="w-4 h-4 text-rose-700" /> Sous Revendeurs (Sub Resellers)
               </h4>
               <p className="text-xs text-slate-600 font-medium leading-relaxed">
-                Créez et gérez vos propres sous-revendeurs sous votre compte panel principal et percevez une marge supplémentaire.
+                Créez et gérez vos propres sous revendeurs sous votre compte panel principal et percevez une marge supplémentaire.
               </p>
             </div>
 

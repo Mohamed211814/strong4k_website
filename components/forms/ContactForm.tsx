@@ -24,7 +24,7 @@ export function ContactForm() {
   }, []);
 
   const mailtoLink = `mailto:${siteConfig.supportEmail}?subject=${encodeURIComponent(
-    `[STRONG4K] ${formData.subject.toUpperCase()} - ${formData.firstName}`
+    `[STRONG4K] ${formData.subject.toUpperCase()} | ${formData.firstName}`
   )}&body=${encodeURIComponent(
     `Bonjour,\n\nNom: ${formData.firstName} ${formData.lastName}\nE-mail: ${formData.email}\n\nMessage:\n${formData.message}`
   )}`;
@@ -72,7 +72,7 @@ export function ContactForm() {
           <input
             type="hidden"
             name="_subject"
-            value={`[STRONG4K Formulaire] ${formData.subject.toUpperCase()} - ${formData.firstName || "Client"}`}
+            value={`[STRONG4K Formulaire] ${formData.subject.toUpperCase()} | ${formData.firstName || "Client"}`}
           />
 
           <div className="flex items-center justify-between border-b border-slate-100 pb-4">

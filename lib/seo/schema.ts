@@ -33,7 +33,7 @@ export function getProductSchema(product: ProductPlan) {
   return {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: `${siteConfig.brandName} - ${product.name}`,
+    name: `${siteConfig.brandName} | ${product.name}`,
     description: product.description,
     brand: {
       "@type": "Brand",
