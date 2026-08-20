@@ -21,6 +21,7 @@ export const siteConfig = {
     { label: "Abonnements", href: "/#abonnements" },
     { label: "Offres", href: "/#abonnements" },
     { label: "Panel", href: "/panel" },
+    { label: "Contact", href: "/contact" },
   ],
   footerLinks: {
     navigation: [
