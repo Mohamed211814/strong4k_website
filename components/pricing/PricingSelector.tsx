@@ -87,12 +87,13 @@ export function PricingSelector({ products }: PricingSelectorProps) {
                 </div>
               </div>
 
-              {/* Action Button linking to WhatsApp */}
+              {/* Action Button linking to checkout URL or WhatsApp */}
               <div className="pt-8">
                 <a
-                  href={whatsappLink}
+                  href={plan.checkoutUrl || whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
                   className="w-full inline-flex items-center justify-center gap-2.5 py-4 rounded-xl font-extrabold text-sm transition-all duration-300 shadow-md bg-rose-700 hover:bg-rose-800 text-white shadow-rose-700/25 hover:scale-[1.02]"
                 >
                   <span>Découvrir l'offre</span>

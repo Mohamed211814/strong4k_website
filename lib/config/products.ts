@@ -13,6 +13,7 @@ export interface ProductPlan {
   features: string[];
   ctaText: string;
   popularDiscountBadge?: string;
+  checkoutUrl?: string;
 }
 
 export const products: ProductPlan[] = [
@@ -21,10 +22,11 @@ export const products: ProductPlan[] = [
     name: "Pass 1 Mois",
     duration: "1 MOIS",
     durationMonths: 1,
-    priceFormatted: "7,99 $",
-    priceValue: 7.99,
+    priceFormatted: "11,99 $",
+    priceValue: 11.99,
     currency: "$",
-    monthlyEquivalent: "7,99 $ / mois",
+    monthlyEquivalent: "11,99 $ / mois",
+    checkoutUrl: "https://t.co/Lzz8gR9JxM",
     description: "Idéal pour tester l'expérience STRONG4K en toute liberté sans engagement.",
     featured: false,
     ctaText: "Découvrir l'offre",
@@ -47,10 +49,11 @@ export const products: ProductPlan[] = [
     name: "Pass 12 Mois",
     duration: "12 MOIS",
     durationMonths: 12,
-    priceFormatted: "55,42 $",
-    priceValue: 55.42,
+    priceFormatted: "55,99 $",
+    priceValue: 55.99,
     currency: "$",
-    monthlyEquivalent: "4,62 $ / mois",
+    monthlyEquivalent: "4,67 $ / mois",
+    checkoutUrl: "https://t.co/OOQgSo81gQ",
     description: "La formule la plus économique pour profiter d'un an de divertissement sans interruption.",
     featured: true,
     badge: "LE PLUS POPULAIRE",
@@ -75,10 +78,11 @@ export const products: ProductPlan[] = [
     name: "Pass 6 Mois",
     duration: "6 MOIS",
     durationMonths: 6,
-    priceFormatted: "32,60 $",
-    priceValue: 32.60,
+    priceFormatted: "32,99 $",
+    priceValue: 32.99,
     currency: "$",
-    monthlyEquivalent: "5,43 $ / mois",
+    monthlyEquivalent: "5,50 $ / mois",
+    checkoutUrl: "https://t.co/mJ1Gx6ZWku",
     description: "Le parfait compromis entre souplesse et économies pour un confort prolongé.",
     featured: false,
     popularDiscountBadge: "ÉCONOMISEZ 35%",
