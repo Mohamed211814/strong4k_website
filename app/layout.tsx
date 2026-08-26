@@ -14,6 +14,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
+  verification: {
+    google: "3E4md620rCOiMEsc8ejS3OQaLJsRdoT9NqVzztyuZCw",
+  },
   title: {
     default: "Abonnement IPTV 4K France | STRONG4K",
     template: "%s | STRONG4K",
@@ -99,6 +102,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} scroll-smooth`} suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="3E4md620rCOiMEsc8ejS3OQaLJsRdoT9NqVzztyuZCw" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
