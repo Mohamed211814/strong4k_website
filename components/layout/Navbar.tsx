@@ -130,20 +130,6 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/a-propos"
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-4 py-3 text-base font-semibold text-slate-800 hover:text-slate-950 hover:bg-slate-100 rounded-xl transition-colors"
-              >
-                À propos
-              </Link>
-              <Link
-                href="/contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-4 py-3 text-base font-semibold text-slate-800 hover:text-slate-950 hover:bg-slate-100 rounded-xl transition-colors"
-              >
-                Contact
-              </Link>
             </nav>
 
             <div className="pt-4 border-t border-slate-200 flex flex-col gap-3">

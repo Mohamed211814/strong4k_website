@@ -62,7 +62,7 @@ export const siteConfig = {
   },
   navLinks: [
     { label: "Abonnements", href: "/#abonnements" },
-    { label: "Offres", href: "/#abonnements" },
+    { label: "Blog", href: "/blog" },
     { label: "Panel", href: "/panel" },
     { label: "Contact", href: "/contact" },
   ],
