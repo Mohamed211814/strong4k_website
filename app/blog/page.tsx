@@ -40,6 +40,15 @@ export default function BlogIndexPage() {
               key={post.slug}
               className="bg-white rounded-3xl border border-slate-200 shadow-md shadow-slate-200/50 overflow-hidden flex flex-col justify-between hover:border-red-500/40 hover:shadow-xl transition-all duration-300"
             >
+              {post.image && (
+                <div className="relative w-full h-48 overflow-hidden bg-slate-100">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              )}
               <div className="p-6 space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-[11px] font-bold text-red-700 uppercase tracking-wider bg-red-50 px-3 py-1 rounded-full border border-red-200">
@@ -62,8 +71,14 @@ export default function BlogIndexPage() {
 
               <div className="p-6 pt-0 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
                 <div className="flex items-center gap-1.5">
-                  <Calendar className="w-3.5 h-3.5 text-red-600" />
-                  <span>{post.publishedAt}</span>
+                  {post.publishedAt ? (
+                    <>
+                      <Calendar className="w-3.5 h-3.5 text-red-600" />
+                      <span>{post.publishedAt}</span>
+                    </>
+                  ) : (
+                    <span className="text-red-700 font-bold bg-red-50 px-2.5 py-0.5 rounded-full border border-red-200">Guide Spécial</span>
+                  )}
                 </div>
 
                 <Link

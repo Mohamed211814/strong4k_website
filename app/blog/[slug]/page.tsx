@@ -93,10 +93,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <Clock className="w-3.5 h-3.5" />
               <span>{post.readTime}</span>
             </div>
-            <div className="flex items-center gap-1 text-slate-500 font-mono font-medium">
-              <Calendar className="w-3.5 h-3.5 text-red-600" />
-              <span>Publié le {post.publishedAt}</span>
-            </div>
+            {post.publishedAt && (
+              <div className="flex items-center gap-1 text-slate-500 font-mono font-medium">
+                <Calendar className="w-3.5 h-3.5 text-red-600" />
+                <span>Publié le {post.publishedAt}</span>
+              </div>
+            )}
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-slate-900 leading-tight">
@@ -107,6 +109,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <User className="w-4 h-4 text-red-600" />
             <span>Par <strong className="text-slate-900 font-bold">{post.author}</strong></span>
           </div>
+
+          {post.image && (
+            <div className="relative w-full h-[320px] sm:h-[420px] rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          )}
         </div>
 
         {/* Content Body */}
