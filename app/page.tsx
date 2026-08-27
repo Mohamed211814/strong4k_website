@@ -17,8 +17,8 @@ export default function HomePage() {
       <TrustStrip />
       <StatementSection />
       <EditorialFeatures />
-      <DeviceShowcase />
       <PricingSection />
+      <DeviceShowcase />
       <HowItWorks />
       <SeoKeywordsSection />
       <TestimonialsSection />
