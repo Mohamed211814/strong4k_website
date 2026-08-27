@@ -7,9 +7,10 @@ import { FinalCta } from "@/components/cta/FinalCta";
 import { Tv, Globe, Shield, CheckCircle, Wifi, Cpu, Zap, Radio, Sparkles, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "IPTV France | Solution Streaming TV Réactive & Fluide",
+  title: "Fournisseur IPTV Premium France 4K | Stabilité Maximale Sans Coupure",
   description:
-    "Profitez d'une solution TV par Internet pensée pour les utilisateurs en France. Compatible Fibre, ADSL et 4G/5G sur Smart TV, Android et iOS.",
+    "Profitez du fournisseur IPTV n°1 en France. Chaînes françaises 4K, sports en direct (Ligue 1, Champions League) et VOD. Compatible IPTV Smarters Pro, Tivimate, Firestick & Smart TV.",
+  keywords: siteConfig.seoKeywords,
   alternates: {
     canonical: `${siteConfig.domain}/iptv-france`,
   },

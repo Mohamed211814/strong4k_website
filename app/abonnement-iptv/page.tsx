@@ -8,9 +8,10 @@ import { FinalCta } from "@/components/cta/FinalCta";
 import { ShieldCheck, Zap, Tv, CheckCircle2, Sparkles, MonitorPlay, Wifi, Layers, Flame, Server } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Abonnement IPTV France | Formules & Compatibilité",
+  title: "Meilleur Abonnement IPTV France 4K | Smart TV, Firestick, Xtream & M3U",
   description:
-    "Découvrez nos formules d'abonnement IPTV en France. Un accès flexible, sans engagement et compatible avec toutes vos Smart TV, boîtiers Android et mobiles.",
+    "Acheter le meilleur abonnement IPTV 4K en France sans coupure. Compatible Smart TV Samsung/LG, Amazon Firestick, IPTV Smarters Pro, Tivimate, Xtream Codes et M3U. Activation rapide sous 5 min.",
+  keywords: siteConfig.seoKeywords,
   alternates: {
     canonical: `${siteConfig.domain}/abonnement-iptv`,
   },

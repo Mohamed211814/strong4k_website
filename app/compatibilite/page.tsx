@@ -7,9 +7,10 @@ import Link from "next/link";
 import { Tv, Flame, Smartphone, Monitor, Tablet, ArrowRight, CheckCircle2, Cpu, Sparkles, AppWindow } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Compatibilité Appareils 4K | Smart TV, Fire TV, Android & Mobile",
+  title: "Compatibilité IPTV 4K | Smart TV Samsung LG, Firestick, Smarters Pro & Tivimate",
   description:
-    "Vérifiez la compatibilité de vos appareils avec le service STRONG4K. Guides d'installation pas à pas pour Smart TV, Amazon Fire TV, Android, iPhone et PC.",
+    "Guide de compatibilité IPTV 4K pour Smart TV Samsung (Tizen), LG (webOS), Amazon Firestick, Android TV, IPTV Smarters Pro, Tivimate, Xtream Codes API et M3U.",
+  keywords: siteConfig.seoKeywords,
   alternates: {
     canonical: `${siteConfig.domain}/compatibilite`,
   },

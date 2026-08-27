@@ -6,9 +6,10 @@ import { FaqSection } from "@/components/faq/FaqSection";
 import { FinalCta } from "@/components/cta/FinalCta";
 
 export const metadata: Metadata = {
-  title: "Nos Offres & Tarifs | Formules STRONG4K",
+  title: "Tarifs Abonnement IPTV 4K France | Offres 1, 6 et 12 Mois Pas Cher",
   description:
-    "Consultez l'ensemble de nos formules d'abonnement : Pass 1 mois, 6 mois et 12 mois. Tarifs transparents, sans engagement et activation instantanée.",
+    "Découvrez nos prix d'abonnement IPTV 4K en France : Pass 1 mois (11,99$), 6 mois (32,99$) et 12 mois (55,99$). Sans engagement, activation instantanée & compatible tout appareil.",
+  keywords: siteConfig.seoKeywords,
   alternates: {
     canonical: `${siteConfig.domain}/offres`,
   },

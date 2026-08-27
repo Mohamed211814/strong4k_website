@@ -5,9 +5,10 @@ import { FaqSection } from "@/components/faq/FaqSection";
 import { FinalCta } from "@/components/cta/FinalCta";
 
 export const metadata: Metadata = {
-  title: "Foire Aux Questions (FAQ) | Tout savoir sur STRONG4K",
+  title: "FAQ Abonnement IPTV France 4K | Questions, Test 24h & Installation",
   description:
-    "Trouvez des réponses claires à vos questions sur les abonnements 4K, l'activation instantanée, les appareils compatibles et le support VIP.",
+    "Trouvez toutes les réponses sur votre abonnement IPTV 4K France : installation Smart TV (Samsung, LG), Amazon Firestick, IPTV Smarters Pro, Tivimate, Xtream Codes API et M3U.",
+  keywords: siteConfig.seoKeywords,
   alternates: {
     canonical: `${siteConfig.domain}/faq`,
   },

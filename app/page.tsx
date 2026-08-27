@@ -6,6 +6,7 @@ import { DeviceShowcase } from "@/components/devices/DeviceShowcase";
 import { PricingSection } from "@/components/pricing/PricingSection";
 import { HowItWorks } from "@/components/how-it-works/HowItWorks";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
+import { SeoKeywordsSection } from "@/components/seo/SeoKeywordsSection";
 import { FaqSection } from "@/components/faq/FaqSection";
 import { FinalCta } from "@/components/cta/FinalCta";
 
@@ -19,6 +20,7 @@ export default function HomePage() {
       <DeviceShowcase />
       <PricingSection />
       <HowItWorks />
+      <SeoKeywordsSection />
       <TestimonialsSection />
       <FaqSection />
       <FinalCta />

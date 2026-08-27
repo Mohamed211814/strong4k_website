@@ -26,6 +26,7 @@ export function getWebsiteSchema() {
     url: siteConfig.domain,
     inLanguage: "fr-FR",
     description: siteConfig.description,
+    keywords: siteConfig.seoKeywords.join(", "),
   };
 }
 
@@ -34,17 +35,18 @@ export function getProductSchema(product: ProductPlan) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `${siteConfig.brandName} | ${product.name}`,
-    description: product.description,
+    description: `${product.description} Meilleur abonnement IPTV 4K France compatible Smart TV, Firestick, IPTV Smarters Pro, Tivimate, Xtream Codes et M3U.`,
+    keywords: siteConfig.seoKeywords.join(", "),
     brand: {
       "@type": "Brand",
       name: siteConfig.brandName,
     },
     offers: {
       "@type": "Offer",
-      priceCurrency: "EUR",
+      priceCurrency: "USD",
       price: product.priceValue,
       availability: "https://schema.org/InStock",
-      url: `${siteConfig.domain}/offres`,
+      url: product.checkoutUrl || `${siteConfig.domain}/offres`,
       seller: {
         "@type": "Organization",
         name: siteConfig.brandName,
