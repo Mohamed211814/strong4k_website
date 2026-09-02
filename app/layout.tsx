@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     google: "3E4md620rCOiMEsc8ejS3OQaLJsRdoT9NqVzztyuZCw",
   },
   title: {
-    default: "Meilleur Abonnement IPTV 4K France Sans Coupure | STRONG4K",
+    default: "Meilleur Abonnement Strong IPTV 4K France Sans Coupure | STRONG4K",
     template: "%s | STRONG4K",
   },
   description: siteConfig.description,

@@ -20,6 +20,32 @@ import {
 export function SeoKeywordsSection() {
   const keywordCategories = [
     {
+      title: "Recherches Strong IPTV & Fournisseur 4K France",
+      icon: Sparkles,
+      description: "Mots-clés recherchés pour trouver le service Strong IPTV officiel en France avec flux 4K 60FPS et activation instantanée.",
+      tags: [
+        "Strong IPTV",
+        "Strong IPTV 4K",
+        "Strong IPTV France",
+        "Abonnement Strong IPTV",
+        "Abonnement Strong IPTV France",
+        "Fournisseur Strong IPTV Fiable",
+        "Serveur Strong IPTV Sans Coupure",
+        "Strong IPTV Smarters Pro",
+        "Strong IPTV Tivimate Premium",
+        "Strong IPTV Test Gratuit 24h",
+        "Code Strong IPTV Actif",
+        "Strong IPTV Avis Forum",
+        "Strong IPTV Pas Cher 12 Mois",
+        "Strong IPTV Firestick Amazon",
+        "Strong IPTV Smart TV Samsung LG",
+        "Meilleur Strong IPTV 2026",
+        "Strong IPTV Xtream Codes API",
+        "Strong IPTV M3U France",
+        "Strong IPTV Haute Qualité",
+      ],
+    },
+    {
       title: "Recherches d'Achat & Fournisseur IPTV France",
       icon: ShieldCheck,
       description: "Mots-clés transactionnels pour trouver le fournisseur IPTV n°1 en France avec paiement sécurisé et activation immédiate.",
@@ -322,13 +348,13 @@ export function SeoKeywordsSection() {
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-50 border border-rose-200 text-rose-800 text-xs font-bold uppercase tracking-wider shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-rose-700" />
-            <span>RÉFÉRENCE IPTV FRANCE 4K ULTRA HD</span>
+            <span>RÉFÉRENCE STRONG IPTV FRANCE 4K ULTRA HD</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            Le Meilleur Abonnement IPTV en France Sans Coupure
+            Le Meilleur Abonnement Strong IPTV en France Sans Coupure
           </h2>
           <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
-            Profitez de l'offre télévisuelle la plus complète et la plus stable avec <strong>STRONG4K</strong>. Des milliers de chaînes directes en qualité 4K Ultra HD & 60 FPS, une large bibliothèque de films et séries VOD récents, et une compatibilité garantie sur l'ensemble de vos appareils.
+            Profitez de l'offre télévisuelle <strong>Strong IPTV</strong> la plus complète et la plus stable avec <strong>STRONG4K</strong>. Des milliers de chaînes directes en qualité 4K Ultra HD & 60 FPS, une large bibliothèque de films et séries VOD récents, et une compatibilité garantie sur l'ensemble de vos appareils.
           </p>
         </div>
 

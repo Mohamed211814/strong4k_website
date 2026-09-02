@@ -7,9 +7,9 @@ import { FinalCta } from "@/components/cta/FinalCta";
 import { Tv, Globe, Shield, CheckCircle, Wifi, Cpu, Zap, Radio, Sparkles, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Fournisseur IPTV Premium France 4K | Stabilité Maximale Sans Coupure",
+  title: "Fournisseur Strong IPTV France 4K | Stabilité Maximale Sans Coupure",
   description:
-    "Profitez du fournisseur IPTV n°1 en France. Chaînes françaises 4K, sports en direct (Ligue 1, Champions League) et VOD. Compatible IPTV Smarters Pro, Tivimate, Firestick & Smart TV.",
+    "Profitez du meilleur fournisseur Strong IPTV en France. Chaînes françaises 4K, sports en direct (Ligue 1, Champions League) et VOD. Compatible IPTV Smarters Pro, Tivimate, Firestick & Smart TV.",
   keywords: siteConfig.seoKeywords,
   alternates: {
     canonical: `${siteConfig.domain}/iptv-france`,
@@ -26,16 +26,16 @@ export default function IptvFrancePage() {
         <div className="py-8 text-center max-w-4xl mx-auto space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-50 border border-rose-200 text-rose-800 text-xs font-bold uppercase tracking-wider shadow-sm">
             <Globe className="w-3.5 h-3.5 text-rose-700" />
-            <span>OPTIMISÉ POUR LES RÉSEAUX EN FRANCE</span>
+            <span>STRONG IPTV : OPTIMISÉ POUR LES RÉSEAUX EN FRANCE</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-tight">
-            IPTV France 4K Ultra HD : <br />
+            Strong IPTV France 4K Ultra HD : <br />
             <span className="text-rose-700">Votre télévision avec une stabilité maximale.</span>
           </h1>
 
           <p className="text-slate-600 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed font-medium">
-            Profitez des meilleures performances de diffusion sur l'ensemble des réseaux Fibre et ADSL en France. Une infrastructure CDN haut débit garantissant une image 4K et 60 FPS sans coupure.
+            Profitez des meilleures performances de diffusion Strong IPTV sur l'ensemble des réseaux Fibre et ADSL en France. Une infrastructure CDN haut débit garantissant une image 4K et 60 FPS sans coupure.
           </p>
         </div>
 

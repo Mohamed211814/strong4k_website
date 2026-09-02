@@ -8,9 +8,9 @@ import { FinalCta } from "@/components/cta/FinalCta";
 import { ShieldCheck, Zap, Tv, CheckCircle2, Sparkles, MonitorPlay, Wifi, Layers, Flame, Server } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Meilleur Abonnement IPTV France 4K | Smart TV, Firestick, Xtream & M3U",
+  title: "Meilleur Abonnement Strong IPTV France 4K | Smart TV, Firestick, Xtream & M3U",
   description:
-    "Acheter le meilleur abonnement IPTV 4K en France sans coupure. Compatible Smart TV Samsung/LG, Amazon Firestick, IPTV Smarters Pro, Tivimate, Xtream Codes et M3U. Activation rapide sous 5 min.",
+    "Acheter le meilleur abonnement Strong IPTV 4K en France sans coupure. Compatible Smart TV Samsung/LG, Amazon Firestick, IPTV Smarters Pro, Tivimate, Xtream Codes et M3U. Activation rapide sous 5 min.",
   keywords: siteConfig.seoKeywords,
   alternates: {
     canonical: `${siteConfig.domain}/abonnement-iptv`,
@@ -27,16 +27,16 @@ export default function AbonnementIptvPage() {
         <div className="py-8 text-center max-w-4xl mx-auto space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-50 border border-rose-200 text-rose-800 text-xs font-bold uppercase tracking-wider shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-rose-700" />
-            <span>EXCELLENCE DE DIFFUSION 4K</span>
+            <span>EXCELLENCE DE DIFFUSION STRONG IPTV 4K</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-tight">
-            Abonnement IPTV en France : <br />
-            <span className="text-rose-700">La TV 4K Ultra HD sans compromise.</span>
+            Abonnement Strong IPTV en France : <br />
+            <span className="text-rose-700">La TV 4K Ultra HD sans compromis.</span>
           </h1>
 
           <p className="text-slate-600 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed font-medium">
-            Profitez d'un accès télévisuel de nouvelle génération. Plus de 20 000 chaînes en direct et une immense bibliothèque VOD en 4K Ultra HD & 60 FPS, accessibles sur tous vos équipements connectés.
+            Profitez du service Strong IPTV de nouvelle génération. Plus de 20 000 chaînes en direct et une immense bibliothèque VOD en 4K Ultra HD & 60 FPS, accessibles sur tous vos équipements connectés.
           </p>
 
           <div className="pt-4 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-700 font-bold">
@@ -57,10 +57,10 @@ export default function AbonnementIptvPage() {
           <div className="max-w-3xl space-y-4">
             <span className="text-xs font-bold uppercase tracking-widest text-rose-700">TECHNOLOGIE UNIQUE</span>
             <h2 className="text-2xl sm:text-4xl font-black text-slate-900">
-              Pourquoi l'Abonnement STRONG4K est le Choix n°1 en France
+              Pourquoi l'Abonnement Strong IPTV STRONG4K est le Choix n°1 en France
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-              Contrairement aux offres traditionnelles bridées ou dépendantes d'une antenne parabole, STRONG4K utilise une infrastructure réseau européenne distribuée sur des serveurs haute vitesse. Cela garantit un zapping ultra rapide et une stabilité optimale lors des matchs en direct.
+              Contrairement aux offres traditionnelles bridées ou dépendantes d'une antenne parabole, l'infrastructure Strong IPTV de STRONG4K utilise un réseau européen distribué sur des serveurs haute vitesse. Cela garantit un zapping ultra rapide et une stabilité optimale lors des matchs en direct.
             </p>
           </div>
 
@@ -97,11 +97,11 @@ export default function AbonnementIptvPage() {
           </div>
         </div>
 
-        {/* Comparison: Télévision Classique vs STRONG4K */}
+        {/* Comparison: Télévision Classique vs Strong IPTV */}
         <div className="space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <h2 className="text-3xl font-black text-slate-900">Comparatif : Offre TV Classique vs STRONG4K</h2>
-            <p className="text-sm text-slate-600 font-medium">Découvrez ce que vous gagnez en passant à la TV 4K par Internet.</p>
+            <h2 className="text-3xl font-black text-slate-900">Comparatif : Offre TV Classique vs Strong IPTV</h2>
+            <p className="text-sm text-slate-600 font-medium">Découvrez ce que vous gagnez en passant à Strong IPTV 4K par Internet.</p>
           </div>
 
           <div className="overflow-x-auto">
@@ -110,7 +110,7 @@ export default function AbonnementIptvPage() {
                 <tr className="bg-slate-100 border-b border-slate-200">
                   <th className="py-4 px-6 text-xs font-bold uppercase text-slate-700">Critères</th>
                   <th className="py-4 px-6 text-xs font-bold uppercase text-slate-500">Offre TV Câble / Satellite</th>
-                  <th className="py-4 px-6 text-xs font-black uppercase text-rose-700 bg-rose-50">STRONG4K IPTV</th>
+                  <th className="py-4 px-6 text-xs font-black uppercase text-rose-700 bg-rose-50">STRONG IPTV 4K</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 text-xs sm:text-sm font-medium">

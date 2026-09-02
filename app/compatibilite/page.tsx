@@ -7,9 +7,9 @@ import Link from "next/link";
 import { Tv, Flame, Smartphone, Monitor, Tablet, ArrowRight, CheckCircle2, Cpu, Sparkles, AppWindow } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Compatibilité IPTV 4K | Smart TV Samsung LG, Firestick, Smarters Pro & Tivimate",
+  title: "Compatibilité Strong IPTV 4K | Smart TV Samsung LG, Firestick, Smarters Pro & Tivimate",
   description:
-    "Guide de compatibilité IPTV 4K pour Smart TV Samsung (Tizen), LG (webOS), Amazon Firestick, Android TV, IPTV Smarters Pro, Tivimate, Xtream Codes API et M3U.",
+    "Guide de compatibilité Strong IPTV 4K pour Smart TV Samsung (Tizen), LG (webOS), Amazon Firestick, Android TV, IPTV Smarters Pro, Tivimate, Xtream Codes API et M3U.",
   keywords: siteConfig.seoKeywords,
   alternates: {
     canonical: `${siteConfig.domain}/compatibilite`,
@@ -66,13 +66,13 @@ export default function CompatibilitePage() {
 
         <div className="py-8 text-center max-w-4xl mx-auto space-y-6">
           <span className="text-xs font-bold uppercase tracking-widest text-rose-800 bg-rose-50 px-4 py-1.5 rounded-full border border-rose-200 shadow-sm">
-            DISPONIBLE SUR TOUS VOS ÉCRANS
+            STRONG IPTV SUR TOUS VOS ÉCRANS
           </span>
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-tight">
-            Compatibilité des appareils <span className="text-rose-700">4K</span>
+            Compatibilité Strong IPTV <span className="text-rose-700">4K Ultra HD</span>
           </h1>
           <p className="text-slate-600 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed font-medium">
-            STRONG4K s'intègre parfaitement avec la majorité des équipements télévisuels et multimédias récents sans contrainte matérielle.
+            L'abonnement Strong IPTV STRONG4K s'intègre parfaitement avec la majorité des équipements télévisuels et multimédias récents sans contrainte matérielle.
           </p>
         </div>
 

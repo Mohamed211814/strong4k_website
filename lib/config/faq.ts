@@ -9,37 +9,37 @@ export const faqItems: FaqItem[] = [
   {
     id: "faq-1",
     category: "Général",
-    question: "Qu'est-ce qu'un service TV sur Internet (IPTV) ?",
+    question: "Qu'est-ce que le service Strong IPTV 4K ?",
     answer:
-      "Un service TV sur Internet (IPTV) vous permet de recevoir des flux de télévision en direct et à la demande directement via votre connexion réseau (Fibre, ADSL, 4G/5G) sur vos équipements multimédias compatibles, sans nécessiter d'antenne râteau ni de parabole satellite.",
+      "Le service Strong IPTV vous permet de recevoir des flux de télévision en direct et à la demande en très haute définition 4K directement via votre connexion réseau (Fibre, ADSL, 4G/5G) sur vos équipements multimédias compatibles, sans nécessiter d'antenne râteau ni de parabole satellite.",
   },
   {
     id: "appareils-compatibles",
     category: "Compatibilité",
-    question: "Sur quels appareils puis-je utiliser le service STRONG4K ?",
+    question: "Sur quels appareils puis-je utiliser l'abonnement Strong IPTV ?",
     answer:
-      "STRONG4K est compatible avec une très grande variété d'appareils : Smart TV (Samsung, LG, Philips, Sony), boîtiers & clés de streaming (Android TV, Amazon Fire TV Stick, Apple TV), smartphones et tablettes (iOS et Android), ainsi que les ordinateurs PC et Mac via des lecteurs multimédias standard.",
+      "L'abonnement Strong IPTV STRONG4K est compatible avec une très grande variété d'appareils : Smart TV (Samsung, LG, Philips, Sony), boîtiers & clés de streaming (Android TV, Amazon Fire TV Stick, Apple TV), smartphones et tablettes (iOS et Android), ainsi que les ordinateurs PC et Mac via des lecteurs multimédias standard.",
   },
   {
     id: "faq-3",
     category: "Activation",
-    question: "Comment fonctionne l'activation de mon abonnement ?",
+    question: "Comment fonctionne l'activation de mon abonnement Strong IPTV ?",
     answer:
-      "Dès que vous finalisez votre commande, vos accès uniques vous sont transmis directement par e-mail avec un guide étape par étape. L'activation se fait généralement en quelques minutes seulement après la configuration de votre application.",
+      "Dès que vous finalisez votre commande, vos accès uniques Strong IPTV vous sont transmis directement par e-mail avec un guide étape par étape. L'activation se fait généralement en quelques minutes seulement après la configuration de votre application.",
   },
   {
     id: "faq-4",
     category: "Installation",
-    question: "Comment configurer le service sur mon appareil ?",
+    question: "Comment configurer Strong IPTV sur mon appareil ?",
     answer:
-      "C'est extrêmement simple ! Il vous suffit de télécharger l'une des applications compatibles recommandées sur le store officiel de votre appareil (ex: Smart TV Store ou Google Play), puis de saisir le lien de playlist ou les identifiants fournis lors de votre souscription. Des guides détaillés sont disponibles dans notre rubrique Installation.",
+      "C'est extrêmement simple ! Il vous suffit de télécharger l'une des applications compatibles recommandées pour Strong IPTV (IPTV Smarters Pro, Tivimate, IBO Player) sur le store officiel de votre appareil, puis de saisir les identifiants Xtream Codes ou le lien M3U fournis lors de votre souscription.",
   },
   {
     id: "faq-5",
     category: "Compatibilité",
-    question: "Puis-je utiliser le service sur une Smart TV sans boîtier externe ?",
+    question: "Puis-je utiliser Strong IPTV sur une Smart TV sans boîtier externe ?",
     answer:
-      "Absolument. Si vous possédez une Smart TV récente (Samsung sous Tizen, LG sous webOS ou une TV sous Android TV / Google TV), vous pouvez directement installer une application compatible depuis le store de votre téléviseur et profiter du service sans aucun boîtier additionnel.",
+      "Absolument. Si vous possédez une Smart TV récente (Samsung sous Tizen, LG sous webOS ou une TV sous Android TV / Google TV), vous pouvez directement installer une application compatible Strong IPTV depuis le store de votre téléviseur et profiter du service sans aucun boîtier additionnel.",
   },
   {
     id: "faq-6",

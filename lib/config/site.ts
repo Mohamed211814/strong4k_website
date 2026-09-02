@@ -1,9 +1,20 @@
 export const siteConfig = {
   brandName: "STRONG4K",
-  tagline: "Meilleur Abonnement IPTV 4K France Sans Coupure",
+  tagline: "Meilleur Abonnement Strong IPTV 4K France Sans Coupure",
   description:
-    "Découvrez le meilleur abonnement IPTV 4K Ultra HD en France sans coupure. Profitez de +22 000 chaînes en direct et VOD en qualité 4K 60FPS. Compatible Smart TV (Samsung, LG), Amazon Firestick, Android Box, IPTV Smarters Pro, Tivimate, Xtream Codes et M3U. Activation instantanée & Support VIP 7j/7.",
+    "Découvrez le meilleur abonnement Strong IPTV 4K Ultra HD en France sans coupure. Profitez de +22 000 chaînes en direct et VOD en qualité 4K 60FPS. Compatible Smart TV (Samsung, LG), Amazon Firestick, Android Box, IPTV Smarters Pro, Tivimate, Xtream Codes et M3U. Activation instantanée & Support VIP 7j/7.",
   seoKeywords: [
+    "strong iptv",
+    "strong iptv 4k",
+    "strong iptv france",
+    "abonnement strong iptv",
+    "serveur strong iptv",
+    "strong iptv premium",
+    "strong iptv test gratuit",
+    "strong iptv smarters pro",
+    "strong iptv tivimate",
+    "code strong iptv",
+    "avis strong iptv",
     "meilleur abonnement iptv france",
     "abonnement iptv france sans coupure",
     "fournisseur iptv france",

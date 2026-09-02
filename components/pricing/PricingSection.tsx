@@ -35,10 +35,10 @@ export function PricingSection() {
             <span>OFFRES & TARIFS TRANSPARENTS</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-slate-900">
-            Choisissez votre expérience 4K.
+            Choisissez votre abonnement Strong IPTV 4K.
           </h2>
           <p className="text-slate-600 text-base sm:text-lg font-medium">
-            Des formules simples, sans surprise et sans engagement pour s'adapter à votre rythme.
+            Des formules Strong IPTV simples, sans surprise et sans engagement pour s'adapter à votre rythme.
           </p>
         </div>
 

@@ -35,12 +35,12 @@ export function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-50 border border-rose-200 text-rose-800 text-xs font-bold uppercase tracking-wider shadow-sm">
               <span className="w-2 h-2 rounded-full bg-rose-700 animate-ping" />
               <Sparkles className="w-3.5 h-3.5 text-rose-700" />
-              <span>EXPÉRIENCE IPTV 4K ULTIME</span>
+              <span>STRONG IPTV : EXPÉRIENCE 4K ULTIME</span>
             </div>
 
             {/* Main H1 */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 leading-[1.15]">
-              Abonnement IPTV 4K.
+              Abonnement Strong IPTV 4K.
               <br />
               <span className="text-rose-700">Qualité Maximale.</span>
               <br />
@@ -49,7 +49,7 @@ export function Hero() {
 
             {/* Supporting Text (max 600px) */}
             <p className="text-slate-600 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-              Profitez d'un accès instantané en 4K Ultra HD & 60 FPS sur l'ensemble de vos appareils connectés en France, avec assistance VIP 7j/7.
+              Profitez du service Strong IPTV officiel avec accès instantané en 4K Ultra HD & 60 FPS sur l'ensemble de vos appareils connectés en France, avec assistance VIP 7j/7.
             </p>
 
             {/* CTA Buttons */}

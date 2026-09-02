@@ -22,10 +22,10 @@ export function FaqSection() {
             <span>RÉPONSES À VOS QUESTIONS</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-slate-900">
-            Questions Fréquentes
+            Questions Fréquentes sur Strong IPTV
           </h2>
           <p className="text-slate-600 text-base sm:text-lg font-medium">
-            Retrouvez rapidement les réponses concernant le fonctionnement, l'activation et la compatibilité de STRONG4K.
+            Retrouvez rapidement les réponses concernant le fonctionnement, l'activation et la compatibilité de votre abonnement Strong IPTV STRONG4K.
           </p>
         </div>
 

@@ -13,7 +13,7 @@ export function StatementSection() {
         </div>
 
         <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-tight">
-          Découvrez notre service IPTV.
+          Découvrez notre service Strong IPTV.
           <br />
           <span className="text-rose-700">Tout ce dont vous avez besoin.</span>
           <br />
@@ -21,7 +21,7 @@ export function StatementSection() {
         </h2>
 
         <p className="text-slate-600 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed font-medium">
-          Une expérience pensée pour être simple à utiliser, agréable à parcourir et parfaitement adaptée à vos appareils compatibles en France.
+          Une expérience Strong IPTV pensée pour être simple à utiliser, ultra stable, agréable à parcourir et parfaitement adaptée à vos appareils compatibles en France.
         </p>
 
         {/* Minimalist Visual Cards Grid */}

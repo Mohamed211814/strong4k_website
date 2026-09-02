@@ -12,10 +12,10 @@ export function EditorialFeatures() {
             <span>FONCTIONNALITÉS CLÉS</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-slate-900">
-            Une expérience TV 4K sur tous vos appareils
+            Une expérience Strong IPTV 4K sur tous vos appareils
           </h2>
           <p className="text-slate-600 text-base sm:text-lg font-medium">
-            Découvrez pourquoi STRONG4K transforme la façon dont vous accédez à votre divertissement au quotidien.
+            Découvrez pourquoi notre service Strong IPTV transforme la façon dont vous accédez à votre divertissement au quotidien.
           </p>
         </div>
 
